@@ -1,4 +1,4 @@
-package commands.userCommands.normalUserCommands.playlistCommands;
+package commands.userCommands.normalUserCommands.playerCommands;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;

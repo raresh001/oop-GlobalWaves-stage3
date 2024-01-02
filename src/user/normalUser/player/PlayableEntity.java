@@ -38,6 +38,12 @@ public abstract class PlayableEntity implements SearchableEntity {
      */
     public abstract int getRemainingTime(Player player);
 
+    public abstract int getCurrentTrackDuration(int track);
+
+    public abstract boolean acceptGetNextTrack(Player player);
+
+    public abstract void acceptListen(Player player);
+
     /**
      * @param repeat the player repeat state (0, 1 or 2)
      * @return the interpretation of repeat according to the current file
@@ -82,5 +88,9 @@ public abstract class PlayableEntity implements SearchableEntity {
      */
     public void unwatch(final Player player) {
         noWatchers--;
+    }
+
+    public boolean isAd() {
+        return false;
     }
 }

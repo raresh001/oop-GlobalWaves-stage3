@@ -66,16 +66,9 @@ public final class LoadCommand extends NormalUserCommand {
             player.setPosition(new Position(0, 0));
         }
 
-        switch (player.getPlayingAudioFile().getType()) {
-            case SONG:
-                ((Song) player.getPlayingAudioFile()).acceptListen(1, player);
-                break;
-            case ALBUM:
-            case PLAYLIST:
-                ((SongsCollection) player.getPlayingAudioFile()).getSongs()
-                        .get(player.getPosition().getTrack()).acceptListen(1, player);
+        if (!player.getPlayingAudioFile().isAd()) {
+            player.getPlayingAudioFile().acceptListen(player);
         }
-
         player.setPlaying(true);
         player.setShuffle(null);
         player.resetRepeat();

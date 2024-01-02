@@ -18,6 +18,7 @@ public final class EndProgramCommand {
         ObjectNode objectNode = (new ObjectMapper()).createObjectNode();
         objectNode.put("command", "endProgram");
 
+        Admin.updatePlayers(timestamp);
         for (NormalUser normalUser : Admin.getNormalUsers()) {
             if (normalUser.getPlayer(timestamp).isPremium()) {
                 normalUser.cancelPremium();

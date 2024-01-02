@@ -1,5 +1,6 @@
 package audio.audioFiles;
 
+import admin.Admin;
 import audio.audioCollections.Playlist;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.SongInput;
@@ -9,11 +10,12 @@ import user.normalUser.player.Listenable;
 import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 @Getter
-public final class Song extends PlayableEntity implements Listenable {
+public final class Song extends PlayableEntity {
     private final int duration;
     private final String album;
     private final ArrayList<String> tags;
@@ -54,6 +56,24 @@ public final class Song extends PlayableEntity implements Listenable {
         return duration - player.getPosition().getPositionInTrack();
     }
 
+    @Override
+    public int getCurrentTrackDuration(int track) {
+        return duration;
+    }
+
+    @Override
+    public boolean acceptGetNextTrack(Player player) {
+        return player.getNextTrackSong();
+    }
+
+//    @Override
+//    public void acceptListen(Player player) {
+//        String username = player.getUsername();
+//        listeners.put(username, listeners.getOrDefault(username, 0) + 1);
+//
+//        player.listen(this, 1);
+//    }
+
     /**
      * like or unlike this song
      * @param normalUser - the normal user that commanded like
@@ -75,14 +95,19 @@ public final class Song extends PlayableEntity implements Listenable {
     }
 
     @Override
-    public void acceptListen(int value, Player player) {
+    public void acceptListen(Player player) {
         String username = player.getUsername();
-        listeners.put(username, listeners.getOrDefault(username, 0) + value);
+        listeners.put(username, listeners.getOrDefault(username, 0) + 1);
 
-        player.listen(this, value);
+        player.listen(this);
     }
 
     public void addRevenue(double price) {
         revenues += price;
+    }
+
+    @Override
+    public boolean isAd() {
+        return name.equals(Admin.getAdd().getName());
     }
 }

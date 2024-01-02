@@ -125,6 +125,9 @@ public final class Artist extends User implements SearchableEntity {
             for (Song song : album.getSongs()) {
                 if (best.getRevenues() < song.getRevenues()) {
                     best = song;
+                } else if (best.getRevenues() == song.getRevenues()
+                        && best.getName().compareTo(song.getName()) > 0) {
+                    best = song;
                 }
             }
         }

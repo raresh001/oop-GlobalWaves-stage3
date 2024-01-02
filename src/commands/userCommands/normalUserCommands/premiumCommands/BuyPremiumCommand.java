@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
+import java.util.HashMap;
+
 public class BuyPremiumCommand extends NormalUserCommand {
     public BuyPremiumCommand(CommandInput commandInput) {
         super(commandInput);
@@ -20,6 +22,8 @@ public class BuyPremiumCommand extends NormalUserCommand {
         if (normalUser.getPlayer(timestamp).isPremium()) {
             objectNode.put("message", username + " is already a premium user.");
         } else {
+            normalUser.getPlayer().setTotalNoWatchedSongs(0);
+            normalUser.getPlayer().setWatchedSongs(new HashMap<>());
             normalUser.getPlayer().setPremium(true);
             objectNode.put("message", username +
                                                     " bought the subscription successfully.");

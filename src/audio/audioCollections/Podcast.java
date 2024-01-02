@@ -55,4 +55,21 @@ public final class Podcast extends PlayableEntity {
         return episodes.get(player.getPosition().getTrack()).getDuration()
                             - player.getPosition().getPositionInTrack();
     }
+
+    @Override
+    public int getCurrentTrackDuration(int track) {
+        return episodes.get(track).getDuration();
+    }
+
+    @Override
+    public boolean acceptGetNextTrack(Player player) {
+        return player.getNextTrackPodcast();
+    }
+
+    @Override
+    public void acceptListen(Player player) {
+        player.listen(this);
+    }
+
+
 }
