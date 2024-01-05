@@ -81,6 +81,10 @@ public final class CommandsFactory {
             case "getNotifications" -> new GetNotificationsCommand(commandInput);
             case "wrapped" -> new WrappedCommand(commandInput);
             case "adBreak" -> new AddBreakCommand(commandInput);
+            case "nextPage" -> new NextPageCommand(commandInput);
+            case "previousPage" -> new PreviousPageCommand(commandInput);
+            case "updateRecommendations" -> new UpdateRecommendationsCommand(commandInput);
+            case "loadRecommendations" -> new LoadRecommendationsCommand(commandInput);
             default -> new InvalidCommand(commandInput);
         };
     }

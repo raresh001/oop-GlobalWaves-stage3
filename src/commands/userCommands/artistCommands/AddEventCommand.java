@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
 import user.artist.Event;
+import user.normalUser.Notification;
 
 public final class AddEventCommand extends ArtistCommand {
     private static final int DATE_LENGTH = 10;
@@ -81,6 +82,8 @@ public final class AddEventCommand extends ArtistCommand {
         }
 
         artist.getEvents().add(new Event(name, description, date));
+        artist.notifySubscribers(new Notification("New Event",
+                                "New Event from " + artist.getName() + "."));
         objectNode.put("message", username + " has added new event successfully.");
         output.add(objectNode);
     }

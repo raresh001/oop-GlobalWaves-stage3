@@ -2,6 +2,8 @@ package commands.userCommands;
 
 import admin.Admin;
 import audio.audioCollections.Album;
+import audio.audioCollections.Podcast;
+import audio.audioFiles.Episode;
 import audio.audioFiles.Song;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -12,9 +14,7 @@ import user.artist.Artist;
 import user.host.Host;
 import user.normalUser.NormalUser;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 record SortCell(String name, int value) implements Comparable<SortCell> {
     @Override
@@ -145,7 +145,32 @@ public final class WrappedCommand extends UserCommand {
     }
 
     public wrapResult wrap(Host host, ObjectNode objectNode) {
-        return wrapResult.INVALID_HOST;
+        HashMap<String, Integer> listenersMap = new HashMap<>();
+        ArrayList<SortCell> topEpisodes = new ArrayList<>();
+
+        for (Podcast podcast : host.getPodcasts()) {
+            System.out.println("HEEEEEEEEEEEEEEEEEEEEEE");
+            for (Episode episode : podcast.getEpisodes()) {
+                int episodeWatches = 0;
+                for (Map.Entry<String, Integer> entry : episode.getListeners().entrySet()) {
+                    episodeWatches += entry.getValue();
+                    listenersMap.put(entry.getKey(), 1);
+                }
+
+                System.out.println("EPISODE watchesL " + episodeWatches);
+                if (episodeWatches > 0) {
+                    topEpisodes.add(new SortCell(episode.getName(), episodeWatches));
+                }
+            }
+        }
+
+        if (topEpisodes.isEmpty()) {
+            return wrapResult.INVALID_HOST;
+        }
+
+        objectNode.set("topEpisodes", getTopArrayNode(topEpisodes));
+        objectNode.put("listeners", listenersMap.size());
+        return wrapResult.VALID_OUTPUT;
     }
 
     @Override

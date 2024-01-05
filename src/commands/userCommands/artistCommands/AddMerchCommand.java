@@ -44,8 +44,8 @@ public final class AddMerchCommand extends ArtistCommand {
             return;
         }
 
-        artist.notifySubscribers(new Notification("New Merch",
-                "New Merch from " + artist.getName() + "."));
+        artist.notifySubscribers(new Notification("New Merchandise",
+                "New Merchandise from " + artist.getName() + "."));
         artist.getMerchList().add(new Merch(name, description, price));
         objectNode.put("message", username + " has added new merchandise successfully.");
         output.add(objectNode);

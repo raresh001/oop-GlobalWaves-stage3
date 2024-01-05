@@ -48,9 +48,12 @@ public final class Player {
     private final HashMap<String, Integer> listenedEpisodes = new HashMap<>();
 
     @Setter
-    private HashMap<Song, Integer> watchedSongs = new HashMap<>();
+    private HashMap<Song, Integer> watchedSongsPremium = new HashMap<>();
     @Setter
-    private int totalNoWatchedSongs;
+    private int totalNoWatchedSongsPremium;
+
+    private HashMap<Song, Integer> watchedSongsNormal = new HashMap<>();
+    private int totalNoWatchedSongsNormal;
 
     public Player(final String username1) {
         username = username1;
@@ -67,20 +70,15 @@ public final class Player {
         return shuffle != null;
     }
 
-    public void listen(Song song, int value) {
-        watchedSongs.put(song, watchedSongs.getOrDefault(song, 0) + value);
-        totalNoWatchedSongs += value;
-
-        listenedSongs.put(song.getName(), listenedSongs.getOrDefault(song.getName(), 0) + value);
-        listenedAlbums.put(song.getAlbum(), listenedAlbums.getOrDefault(song.getAlbum(), 0) + value);
-        listenedGenres.put(song.getGenre(), listenedGenres.getOrDefault(song.getGenre(), 0) + value);
-        listenedArtists.put(song.getArtist(), listenedArtists.getOrDefault(song.getArtist(), 0) + value);
-    }
-
     public void listen(Song song) {
         // System.out.println("Accept listen for " + song.getName());
-        watchedSongs.put(song, watchedSongs.getOrDefault(song, 0) + 1);
-        totalNoWatchedSongs++;
+        if (isPremium) {
+            watchedSongsPremium.put(song, watchedSongsPremium.getOrDefault(song, 0) + 1);
+            totalNoWatchedSongsPremium++;
+        } else {
+            watchedSongsNormal.put(song, watchedSongsNormal.getOrDefault(song, 0) + 1);
+            totalNoWatchedSongsNormal++;
+        }
 
         listenedSongs.put(song.getName(), listenedSongs.getOrDefault(song.getName(), 0) + 1);
         listenedAlbums.put(song.getAlbum(), listenedAlbums.getOrDefault(song.getAlbum(), 0) + 1);
@@ -93,8 +91,25 @@ public final class Player {
         listenedEpisodes.put(episode.getName(), listenedEpisodes.getOrDefault(episode.getName(), 0) + 1);
     }
 
-    public void listen(Episode episode, int value) {
-        listenedEpisodes.put(episode.getName(), listenedEpisodes.getOrDefault(episode.getName(), 0) + value);
+
+    public void addToNormal() {
+        Song song = null;
+        switch (playingAudioFile.getType()) {
+            case SONG:
+                song = (Song) playingAudioFile;
+                break;
+            case ALBUM:
+            case PLAYLIST:
+                song = ((SongsCollection) playingAudioFile).getSongs().get(position.getTrack());
+                break;
+            default:
+                break;
+        }
+
+        if (song != null) {
+            watchedSongsNormal.put(song, watchedSongsNormal.getOrDefault(song, 0) + 1);
+            totalNoWatchedSongsNormal++;
+        }
     }
 
     /**
@@ -120,6 +135,7 @@ public final class Player {
                 return false;
             case 1:
                 repeat = 0;
+                // Intentionally missed break
             default:
                 position = new Position(0, 0);
                 return true;
@@ -137,6 +153,7 @@ public final class Player {
                     return false;
                 case 1:
                     repeat = 0;
+                    // Intentionally missed break
                 default:
                     track = -1;
             }
@@ -149,6 +166,7 @@ public final class Player {
     public boolean getNextTrackSongsCollection() {
         if (repeat == 2) {
             // repeat current song
+            position = new Position(position.getTrack(), 0);
             return true;
         }
 
@@ -215,13 +233,15 @@ public final class Player {
 
         if (playingAudioFile != null) {
             playingAudioFile.acceptListen(this);
+            updatePosition(timestamp1);
+        } else {
+            reset();
+            timestamp = timestamp1;
         }
-
-        updatePosition(timestamp1);
     }
 
     public void updatePosition(final int timestamp1) {
-        if (playingAudioFile == null) {
+        if (playingAudioFile == null || (!playingAudioFile.isAd() && !isPlaying)) {
             timestamp = timestamp1;
             return;
         }
@@ -239,13 +259,12 @@ public final class Player {
             return;
         }
 
-        if (addPrice != -1 &&
+        if (addPrice != -1 && !isPremium &&
                 timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
             playAd(timestamp1);
             return;
         }
 
-        // System.out.println("AM ajuns si aici");
         while (timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
             timestampDiff -= playingAudioFile.getCurrentTrackDuration(position.getTrack());
 
@@ -254,164 +273,12 @@ public final class Player {
                 return;
             }
 
-           //  System.out.println("IN acelasi album");
             playingAudioFile.acceptListen(this);
         }
 
         position.setPositionInTrack(timestampDiff);
         timestamp = timestamp1;
     }
-
-//    private void updateSong(final int timestamp1) {
-//        int timestampDiff = timestamp1 - timestamp;
-//        Song playedSong = (Song) playingAudioFile;
-//
-//        if (playedSong.getDuration() > position.getPositionInTrack() + timestampDiff) {
-//            position = new Position(0,
-//                    position.getPositionInTrack() + timestampDiff);
-//            return;
-//        }
-//
-//        if (repeat == 2) {
-//            playedSong.acceptListen((position.getPositionInTrack() + timestampDiff)
-//                                        / playedSong.getDuration(),
-//                                        this);
-//
-//            position = new Position(0,
-//                    (position.getPositionInTrack() + timestampDiff)
-//                            % playedSong.getDuration());
-//
-//            return;
-//        }
-//
-//        if ((2 * playedSong.getDuration() > position.getPositionInTrack() + timestampDiff)
-//            && (repeat == 1)) {
-//            repeat = 0;
-//
-//            position = new Position(0,
-//                    position.getPositionInTrack()
-//                            + timestampDiff
-//                            - playedSong.getDuration());
-//
-//            playedSong.acceptListen(1, this);
-//            return;
-//        }
-//
-//        reset();
-//    }
-//
-//    private void updateSongsCollectionIfRepeatSong(final int timestampDiff) {
-//        List<Song> songs = ((SongsCollection) playingAudioFile).getSongs();
-//        songs.get(position.getTrack())
-//                .acceptListen((position.getPositionInTrack() + timestampDiff)
-//                                / songs.get(position.getTrack()).getDuration(),
-//                        this);
-//
-//        position = new Position(position.getTrack(),
-//                (position.getPositionInTrack() + timestampDiff)
-//                        % songs.get(position.getTrack()).getDuration());
-//
-//    }
-//
-//    private void updateSongsCollection(final int timestamp1) {
-//        int timestampDiff = timestamp1 - timestamp;
-//        List<Song> songs = ((SongsCollection) playingAudioFile).getSongs();
-//
-//        if (repeat == 2) {
-//            updateSongsCollectionIfRepeatSong(timestampDiff);
-//        }
-//
-//        int track = position.getTrack();
-//
-//        // reset the playing difference as if the current track has just begun
-//        timestampDiff += position.getPositionInTrack();
-//
-//        while (timestampDiff >= songs.get(track).getDuration()) {
-//            timestampDiff -= songs.get(track).getDuration();
-//
-//            if (shuffle != null) {
-//                int posInShuffle = shuffle.indexOf(track);
-//                if (posInShuffle == songs.size() - 1) {
-//                    if (repeat == 0) {
-//                        reset();
-//                        return;
-//                    }
-//
-//                    posInShuffle = -1;
-//                }
-//                track = shuffle.get(1 + posInShuffle);
-//            } else {
-//                track++;
-//                if (track == songs.size()) {
-//                    if (repeat == 0) {
-//                        reset();
-//                        return;
-//                    }
-//
-//                    track = 0;
-//                }
-//            }
-//
-//            songs.get(track).acceptListen(1, this);
-//        }
-//        position = new Position(track, timestampDiff);
-//    }
-//
-//    private void updatePodcast(final int timestamp1) {
-//        int timestampDiff = timestamp1 - timestamp;
-//        int track = position.getTrack();
-//        Podcast podcast = (Podcast) playingAudioFile;
-//
-//        // reset the playing difference as if the current track has just begun
-//        timestampDiff += position.getPositionInTrack();
-//
-//        while (timestampDiff >= podcast.getEpisodes().get(track).getDuration()) {
-//            timestampDiff -= podcast.getEpisodes().get(track).getDuration();
-//            track++;
-//            if (track == podcast.getEpisodes().size()) {
-//                switch (repeat) {
-//                    case 0:
-//                        previousPodcastPositions.remove(podcast.getName());
-//                        reset();
-//                        return;
-//                    case 1:
-//                        repeat = 0;
-//                        // Intentionally missed break
-//                    default:
-//                        track = 0;
-//                }
-//            }
-//
-//            podcast.getEpisodes().get(track).acceptListen(1, this);
-//        }
-//
-//        position = new Position(track, timestampDiff);
-//    }
-//
-//    /**
-//     * update the playing audio file to the new moment
-//     * @param timestamp1 - the current timestamp
-//     */
-//    public void updatePosition2(final int timestamp1) {
-//        if (playingAudioFile == null || !isPlaying) {
-//            timestamp = timestamp1;
-//            return;
-//        }
-//
-//        switch (playingAudioFile.getType()) {
-//            case SONG:
-//                updateSong(timestamp1);
-//                break;
-//            case PLAYLIST:
-//            case ALBUM:
-//                updateSongsCollection(timestamp1);
-//                break;
-//            default: // Podcast
-//                updatePodcast(timestamp1);
-//        }
-//
-//        timestamp = timestamp1;
-//    }
 
     /**
      * retain its current position (if the current file is a podcast)
@@ -491,13 +358,27 @@ public final class Player {
     }
 
     public void calculateCreditAd() {
-        for (Map.Entry<Song, Integer> entry : watchedSongs.entrySet()) {
-            System.out.println("DAM " + addPrice * entry.getValue() / totalNoWatchedSongs + " pt " + entry.getKey().getName());
-            entry.getKey().addRevenue(addPrice * entry.getValue() / totalNoWatchedSongs);
+        System.out.println("AICI E STANDARTD");
+        for (Map.Entry<Song, Integer> entry : watchedSongsNormal.entrySet()) {
+            System.out.println("DAM " + addPrice * entry.getValue() / totalNoWatchedSongsNormal + " pt " + entry.getKey().getName() + " -- " +  entry.getKey().getArtist());
+            entry.getKey().addRevenue(addPrice * entry.getValue() / totalNoWatchedSongsNormal);
         }
 
         System.out.println("GATA CU DATUL\n");
-        totalNoWatchedSongs = 0;
-        watchedSongs = new HashMap<>();
+        totalNoWatchedSongsNormal = 0;
+        watchedSongsNormal = new HashMap<>();
+    }
+
+    public void cancelPremium() {
+        isPremium = false;
+
+        if (playingAudioFile != null && playingAudioFile.isAd()) {
+            position = prevPosition;
+            playingAudioFile = prevPlayingFile;
+
+            if (playingAudioFile != null) {
+                playingAudioFile.acceptListen(this);
+            }
+        }
     }
 }

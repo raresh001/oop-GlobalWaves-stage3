@@ -8,7 +8,7 @@ import user.normalUser.player.Player;
 import java.util.HashMap;
 
 @Getter
-public final class Episode implements Listenable {
+public final class Episode {
     private final String name;
     private final int duration;
     private final String description;
@@ -18,13 +18,5 @@ public final class Episode implements Listenable {
         name = episodeInput.getName();
         duration = episodeInput.getDuration();
         description = episodeInput.getDescription();
-    }
-
-    @Override
-    public void acceptListen(int value, Player player) {
-        String username = player.getUsername();
-        listeners.put(username, listeners.getOrDefault(username, 0) + value);
-
-        player.listen(this, value);
     }
 }

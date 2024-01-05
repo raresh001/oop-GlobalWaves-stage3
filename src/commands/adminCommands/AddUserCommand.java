@@ -1,11 +1,13 @@
 package commands.adminCommands;
 
 import admin.Admin;
+import audio.audioCollections.Podcast;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.Command;
 import fileio.input.CommandInput;
+import org.checkerframework.checker.units.qual.A;
 import user.artist.Artist;
 import user.host.Host;
 import user.normalUser.NormalUser;
@@ -48,7 +50,14 @@ public final class AddUserCommand extends Command {
                 Admin.getArtists().add(new Artist(username, age, city));
                 break;
             case "host":
-                Admin.getHosts().add(new Host(username, age, city));
+                Host host = new Host(username, age, city);
+                for (Podcast podcast : Admin.getPodcasts()) {
+                    if (podcast.getOwner().equals(host.getName())) {
+                        host.getPodcasts().add(podcast);
+                        podcast.setHost(host);
+                    }
+                }
+                Admin.getHosts().add(host);
                 break;
             default:
                 objectNode.put("message", type + " is not a valid user type.");

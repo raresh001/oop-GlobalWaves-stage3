@@ -5,16 +5,19 @@ import audio.audioFiles.Episode;
 import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
 import lombok.Getter;
+import lombok.Setter;
 import user.host.Host;
 import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 @Getter
 public final class Podcast extends PlayableEntity {
     public static final int FORWARD_BACKWARD_TIME = 90;
     private final ArrayList<Episode> episodes;
+    @Setter
     private Host host;
     private final String owner;
 
@@ -68,6 +71,11 @@ public final class Podcast extends PlayableEntity {
 
     @Override
     public void acceptListen(Player player) {
+        System.out.println("HERE");
+        String username = player.getUsername();
+        HashMap<String, Integer> listeners = episodes.get(player.getPosition().getTrack()).getListeners();
+        System.out.println("User " + username + " watches episode " + episodes.get(player.getPosition().getTrack()).getName());
+        listeners.put(username, listeners.getOrDefault(username, 0) + 1);
         player.listen(this);
     }
 

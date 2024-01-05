@@ -64,6 +64,7 @@ public final class AddAlbumCommand extends ArtistCommand {
         Album album = new Album(name, username, releaseYear, description, songs);
 
         Admin.getAlbums().add(album);
+        Admin.getSongs().addAll(songs);
         artist.getAlbums().add(album);
 
         artist.notifySubscribers(new Notification("New Album",

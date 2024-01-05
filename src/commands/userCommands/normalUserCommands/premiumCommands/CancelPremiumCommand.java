@@ -21,7 +21,6 @@ public class CancelPremiumCommand extends NormalUserCommand {
             objectNode.put("message", username + " is not a premium user.");
         } else {
             normalUser.cancelPremium();
-
             objectNode.put("message", username +
                     " cancelled the subscription successfully.");
         }

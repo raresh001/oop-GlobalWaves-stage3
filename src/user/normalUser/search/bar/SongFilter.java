@@ -73,16 +73,14 @@ public final class SongFilter implements SearchFilter {
         int currentIndex = 0;
         ArrayList<SearchableEntity> filteredList = new ArrayList<>();
 
-        for (Album album1 : Admin.getAlbums()) {
-            for (Song song : album1.getSongs()) {
-                if (respectsTheFilter(song)) {
+        for (Song song : Admin.getSongs()) {
+            if (respectsTheFilter(song)) {
                     filteredList.add(song);
                     currentIndex++;
                     if (currentIndex == MAX_FILTERED_LIST_SIZE) {
                         return filteredList;
                     }
                 }
-            }
         }
 
         return filteredList;

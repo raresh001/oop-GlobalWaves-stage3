@@ -12,11 +12,8 @@ import user.User;
 import user.normalUser.NormalUser;
 import user.normalUser.Notification;
 import user.normalUser.Subject;
-import user.normalUser.player.Listenable;
-import user.normalUser.player.Player;
 import user.normalUser.search.bar.SearchableEntity;
 
-import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -35,7 +32,6 @@ public final class Artist extends User implements SearchableEntity {
     }
 
     public double getTotalSongRevenue() {
-        DecimalFormat df = new DecimalFormat("0.00");
         double totalRevenue = 0;
         for (Album album : albums) {
             for (Song song : album.getSongs()) {
@@ -43,7 +39,7 @@ public final class Artist extends User implements SearchableEntity {
             }
         }
 
-        return Double.parseDouble(df.format(totalRevenue));
+        return totalRevenue;
     }
 
     public double getTotalRevenue() {
@@ -136,11 +132,13 @@ public final class Artist extends User implements SearchableEntity {
     }
 
     public ObjectNode showStatistics(int indexInArray) {
+        double songRevenue = (double) Math.round(getTotalSongRevenue() * 100) / 100;
+
         ObjectNode statisticsNode = (new ObjectMapper()).createObjectNode();
         statisticsNode.put("merchRevenue", merchRevenue);
-        statisticsNode.put("songRevenue", getTotalSongRevenue());
+        statisticsNode.put("songRevenue", songRevenue);
         statisticsNode.put("ranking", 1 + indexInArray);
-        if (getTotalSongRevenue() != 0.0) {
+        if (songRevenue != 0.0) {
             statisticsNode.put("mostProfitableSong", getMostProfitableSong());
         } else {
             statisticsNode.put("mostProfitableSong", "N/A");

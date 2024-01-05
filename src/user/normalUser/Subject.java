@@ -13,6 +13,7 @@ public final class Subject {
             }
         }
 
+        observers.add(observer);
         return true;
     }
 

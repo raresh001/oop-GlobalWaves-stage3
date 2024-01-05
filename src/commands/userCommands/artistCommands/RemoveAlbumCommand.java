@@ -2,6 +2,7 @@ package commands.userCommands.artistCommands;
 
 import admin.Admin;
 import audio.audioCollections.Album;
+import audio.audioFiles.Song;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
@@ -38,6 +39,9 @@ public final class RemoveAlbumCommand extends ArtistCommand {
             }
 
             artist.getAlbums().remove(album);
+            for (Song song : album.getSongs()) {
+                Admin.getSongs().remove(song);
+            }
             objectNode.put("message", username + " deleted the album successfully.");
             output.add(objectNode);
             return;

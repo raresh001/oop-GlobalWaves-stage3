@@ -11,6 +11,8 @@ import lombok.Setter;
 import user.User;
 import user.normalUser.page.HomePage;
 import user.normalUser.page.Page;
+import user.normalUser.player.PageHistory;
+import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 import user.normalUser.search.bar.SearchBar;
 
@@ -34,8 +36,15 @@ public final class NormalUser extends User implements Observer {
     private ArrayList<Notification> notifications = new ArrayList<>();
     @Setter
     private boolean isOnline = true;
+
+    private final ArrayList<Song> recommendedSongs = new ArrayList<>();
+    private final ArrayList<Playlist> recommendedPlaylists = new ArrayList<>();
+    @Setter
+    private PlayableEntity lastRecommendation;
+
     @Setter
     private Page page = new HomePage(this);
+    private final PageHistory pageHistory = new PageHistory();
 
     public NormalUser(final UserInput userInput) {
         super(userInput);
@@ -91,15 +100,23 @@ public final class NormalUser extends User implements Observer {
     }
 
     public void cancelPremium() {
-        player.setPremium(false);
+        player.cancelPremium();
 
-        for (Map.Entry<Song, Integer> entry : player.getWatchedSongs().entrySet()) {
+        System.out.println("AICI E PREMIUM");
+        for (Map.Entry<Song, Integer> entry : player.getWatchedSongsPremium().entrySet()) {
+
+            System.out.println("DAM " + PREMIUM_USER_CREDIT * entry.getValue() / player.getTotalNoWatchedSongsPremium() + " CATRE " + entry.getKey().getName() + " -- " + entry.getKey().getArtist());
             entry.getKey().addRevenue(PREMIUM_USER_CREDIT
-                    * entry.getValue()
-                    / player.getTotalNoWatchedSongs());
+                                            * entry.getValue()
+                                            / player.getTotalNoWatchedSongsPremium());
         }
 
-        player.setWatchedSongs(new HashMap<>());
-        player.setTotalNoWatchedSongs(0);
+        player.setWatchedSongsPremium(new HashMap<>());
+        player.setTotalNoWatchedSongsPremium(0);
+    }
+
+    public void changePage(final Page page1) {
+        page = page1;
+        pageHistory.changePage(page1);
     }
 }

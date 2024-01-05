@@ -3,6 +3,7 @@ package user.normalUser.page;
 import audio.audioCollections.Playlist;
 import audio.audioFiles.Song;
 import user.normalUser.NormalUser;
+import user.normalUser.player.PlayableEntity;
 
 import java.util.ArrayList;
 
@@ -14,38 +15,39 @@ public final class HomePage implements Page {
         normalUser = normalUser1;
     }
 
+    private static void appendArray(final StringBuilder builder,
+                                 final ArrayList<? extends PlayableEntity> array) {
+        if (!array.isEmpty()) {
+            builder.append(array.get(0).getName());
+        }
+        for (int index = 1;
+             index < MAX_ARRAY_LENGTH && index < array.size();
+             index++) {
+            builder.append(", ").append(array.get(index).getName());
+        }
+    }
+
     @Override
     public String printPage() {
         final StringBuilder builder = new StringBuilder("Liked songs:\n\t[");
 
         ArrayList<Song> bestSongs = new ArrayList<>(normalUser.getLikedSongs());
         bestSongs.sort((song1, song2) -> song2.getLikes().size() - song1.getLikes().size());
-
-        if (!bestSongs.isEmpty()) {
-            builder.append(bestSongs.get(0).getName());
-        }
-        for (int songIndex = 1;
-             songIndex < MAX_ARRAY_LENGTH && songIndex < bestSongs.size();
-             songIndex++) {
-            builder.append(", ").append(bestSongs.get(songIndex).getName());
-        }
+        appendArray(builder, bestSongs);
 
         builder.append("]\n\nFollowed playlists:\n\t[");
-
         ArrayList<Playlist> bestPlaylists = new ArrayList<>(normalUser.getFollowedPlaylists());
         bestPlaylists.sort((playlist1, playlist2) ->
                 playlist2.getNoFollowers() - playlist1.getNoFollowers());
-        if (!bestPlaylists.isEmpty()) {
-            builder.append(bestPlaylists.get(0).getName());
-        }
-        for (int playlistIndex = 1;
-             playlistIndex < bestPlaylists.size() && playlistIndex < MAX_ARRAY_LENGTH;
-             playlistIndex++) {
-            builder.append(", ")
-                    .append(bestPlaylists.get(playlistIndex).getName());
-        }
-        builder.append("]");
+        appendArray(builder, bestPlaylists);
 
+        builder.append("]\n\nSong recommendations:\n\t[");
+        appendArray(builder, normalUser.getRecommendedSongs());
+
+        builder.append("]\n\nPlaylists recommendations:\n\t[");
+        appendArray(builder, normalUser.getRecommendedPlaylists());
+
+        builder.append("]");
         return builder.toString();
     }
 }
