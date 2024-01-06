@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public final class Admin {
-    private final Song add;
+    private final Song ad;
     private final ArrayList<Song> library = new ArrayList<>();
     private final LinkedList<NormalUser> normalUsers = new LinkedList<>();
     private final LinkedList<Artist> artists = new LinkedList<>();
@@ -26,7 +26,7 @@ public final class Admin {
     private final LinkedList<Playlist> playlists = new LinkedList<>();
     private static Admin instance;
     private Admin(final LibraryInput libraryInput) {
-        add = new Song(libraryInput.getSongs().get(0));
+        ad = new Song(libraryInput.getSongs().get(0));
 
         for (PodcastInput podcastInput : libraryInput.getPodcasts()) {
             podcasts.add(new Podcast(podcastInput));
@@ -67,7 +67,7 @@ public final class Admin {
     }
 
     public static Song getAdd() {
-        return getInstance().add;
+        return getInstance().ad;
     }
 
     /**

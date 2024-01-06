@@ -103,36 +103,50 @@ public final class WrappedCommand extends UserCommand {
         return wrapResult.VALID_OUTPUT;
     }
 
+    private static void wrapAlbum(final Album album,
+                              final HashMap<String, Integer> listenersMap,
+                              final HashMap<String, Integer> topAlbums,
+                              final HashMap<String, Integer> topSongs) {
+        int totalAlbumListeners = 0;
+
+        for (Song song : album.getSongs()) {
+            int totalSongListeners = 0;
+
+            for (Map.Entry<String, Integer> entry : song.getListeners().entrySet()) {
+                listenersMap.put(entry.getKey(),
+                        listenersMap.getOrDefault(entry.getKey(), 0)
+                                + entry.getValue());
+                totalSongListeners += entry.getValue();
+            }
+
+            if (totalSongListeners != 0) {
+                topSongs.put(song.getName(),
+                        topSongs.getOrDefault(song.getName(), 0) + totalSongListeners);
+                totalAlbumListeners += totalSongListeners;
+            }
+        }
+
+        if (totalAlbumListeners > 0) {
+            topAlbums.put(album.getName(),
+                    topAlbums.getOrDefault(album.getName(), 0) + totalAlbumListeners);
+        }
+    }
+
     public wrapResult wrap(Artist artist, ObjectNode objectNode) {
-        ArrayList<SortCell> topAlbums = new ArrayList<>();
+        HashMap<String, Integer> topAlbums = new HashMap<>();
         HashMap<String, Integer> topSongs = new HashMap<>();
 
         HashMap<String, Integer> listenersMap = new HashMap<>();
 
-        for (Album album : artist.getAlbums()) {
-            int totalAlbumListeners = 0;
-
-            for (Song song : album.getSongs()) {
-                int totalSongListeners = 0;
-
-                for (Map.Entry<String, Integer> entry : song.getListeners().entrySet()) {
-                    listenersMap.put(entry.getKey(),
-                                    listenersMap.getOrDefault(entry.getKey(), 0)
-                                            + entry.getValue());
-
-                    totalSongListeners += entry.getValue();
-                }
-
-                topSongs.put(song.getName(), topSongs.getOrDefault(song.getName(), 0) + totalSongListeners);
-                totalAlbumListeners += totalSongListeners;
-            }
-
-            if (totalAlbumListeners > 0) {
-                topAlbums.add(new SortCell(album.getName(), totalAlbumListeners));
-            }
+        for (Album album : artist.getRemovedAlbums()) {
+            wrapAlbum(album, listenersMap, topAlbums, topSongs);
         }
 
-        if (topSongs.isEmpty() && artist.getMerchRevenue() == 0) {
+        for (Album album : artist.getAlbums()) {
+            wrapAlbum(album, listenersMap, topAlbums, topSongs);
+        }
+
+        if (topSongs.isEmpty()) {
             return wrapResult.INVALID_ARTIST;
         }
 
@@ -149,15 +163,12 @@ public final class WrappedCommand extends UserCommand {
         ArrayList<SortCell> topEpisodes = new ArrayList<>();
 
         for (Podcast podcast : host.getPodcasts()) {
-            System.out.println("HEEEEEEEEEEEEEEEEEEEEEE");
             for (Episode episode : podcast.getEpisodes()) {
                 int episodeWatches = 0;
                 for (Map.Entry<String, Integer> entry : episode.getListeners().entrySet()) {
                     episodeWatches += entry.getValue();
                     listenersMap.put(entry.getKey(), 1);
                 }
-
-                System.out.println("EPISODE watchesL " + episodeWatches);
                 if (episodeWatches > 0) {
                     topEpisodes.add(new SortCell(episode.getName(), episodeWatches));
                 }
@@ -182,9 +193,7 @@ public final class WrappedCommand extends UserCommand {
             objectNode.put("message", "No data to show for user " + username + ".");
         } else {
             // update all players
-            for (NormalUser normalUser : Admin.getNormalUsers()) {
-                normalUser.getPlayer().updatePosition(timestamp);
-            }
+            Admin.updatePlayers(timestamp);
 
             ObjectNode resultNode = (new ObjectMapper()).createObjectNode();
 

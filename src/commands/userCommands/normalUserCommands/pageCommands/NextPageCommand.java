@@ -18,7 +18,7 @@ public class NextPageCommand extends NormalUserCommand {
             return;
         }
 
-        Page previousPage = normalUser.getPageHistory().redo();
+        Page previousPage = normalUser.getPageHistory().redo(normalUser.getPage());
         if (previousPage == null) {
             objectNode.put("message", "There are no pages left to go forward.");
         } else {

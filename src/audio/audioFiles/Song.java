@@ -6,13 +6,12 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.SongInput;
 import lombok.Getter;
 import user.normalUser.NormalUser;
-import user.normalUser.player.Listenable;
 import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 @Getter
 public final class Song extends PlayableEntity {
@@ -29,6 +28,10 @@ public final class Song extends PlayableEntity {
     private final ArrayList<NormalUser> likes = new ArrayList<>();
     private final ArrayList<Playlist> playlistList = new ArrayList<>();
     private final HashMap<String, Integer> listeners = new HashMap<>();
+
+    public HashMap<String, Integer> getListeners() {
+        return listeners;
+    }
 
     public Song(final SongInput songInput) {
         super(songInput.getName());
@@ -65,14 +68,6 @@ public final class Song extends PlayableEntity {
     public boolean acceptGetNextTrack(Player player) {
         return player.getNextTrackSong();
     }
-
-//    @Override
-//    public void acceptListen(Player player) {
-//        String username = player.getUsername();
-//        listeners.put(username, listeners.getOrDefault(username, 0) + 1);
-//
-//        player.listen(this, 1);
-//    }
 
     /**
      * like or unlike this song

@@ -39,6 +39,7 @@ public final class RemoveAlbumCommand extends ArtistCommand {
             }
 
             artist.getAlbums().remove(album);
+            artist.getRemovedAlbums().add(album);
             for (Song song : album.getSongs()) {
                 Admin.getSongs().remove(song);
             }

@@ -21,7 +21,7 @@ public final class Player {
     private boolean isPremium;
 
     @Setter
-    private double addPrice = -1;
+    private double adPrice = -1;
 
     @Setter
     private PlayableEntity playingAudioFile;
@@ -89,27 +89,6 @@ public final class Player {
     public void listen(Podcast podcast) {
         Episode episode = podcast.getEpisodes().get(position.getTrack());
         listenedEpisodes.put(episode.getName(), listenedEpisodes.getOrDefault(episode.getName(), 0) + 1);
-    }
-
-
-    public void addToNormal() {
-        Song song = null;
-        switch (playingAudioFile.getType()) {
-            case SONG:
-                song = (Song) playingAudioFile;
-                break;
-            case ALBUM:
-            case PLAYLIST:
-                song = ((SongsCollection) playingAudioFile).getSongs().get(position.getTrack());
-                break;
-            default:
-                break;
-        }
-
-        if (song != null) {
-            watchedSongsNormal.put(song, watchedSongsNormal.getOrDefault(song, 0) + 1);
-            totalNoWatchedSongsNormal++;
-        }
     }
 
     /**
@@ -203,7 +182,7 @@ public final class Player {
     }
 
     public void playAd(final int timestamp1) {
-        System.out.println("Am intrat aici " + addPrice);
+        System.out.println("Am intrat aici " + adPrice);
         int posInTrack = position.getPositionInTrack();
 
         int duration = playingAudioFile.getCurrentTrackDuration(position.getTrack());
@@ -217,7 +196,7 @@ public final class Player {
         position = new Position(0, 0);
         playingAudioFile = Admin.getAdd();
 
-        System.out.println("Am iesit de aici " + addPrice);
+        System.out.println("Am iesit de aici " + adPrice);
 
         updatePosition(timestamp1);
     }
@@ -225,7 +204,7 @@ public final class Player {
     private void playBackNormal(final int timestamp1) {
         calculateCreditAd();
 
-        addPrice = -1;
+        adPrice = -1;
         timestamp += (playingAudioFile.getCurrentTrackDuration(0) - position.getPositionInTrack());
 
         playingAudioFile = prevPlayingFile;
@@ -249,7 +228,7 @@ public final class Player {
         int timestampDiff = timestamp1 - timestamp + position.getPositionInTrack();
 
         if (playingAudioFile.isAd()) {
-            System.out.println("AICI: " + addPrice);
+            System.out.println("AICI: " + adPrice);
             if (timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
                 playBackNormal(timestamp1);
                 return;
@@ -259,7 +238,7 @@ public final class Player {
             return;
         }
 
-        if (addPrice != -1 && !isPremium &&
+        if (adPrice != -1 && !isPremium &&
                 timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
             playAd(timestamp1);
             return;
@@ -353,18 +332,18 @@ public final class Player {
     }
 
     public void addBreak(double price) {
-        addPrice = price;
-        System.out.println("Schimb la " + price);
+        adPrice = price;
+        // System.out.println("Schimb la " + price);
     }
 
     public void calculateCreditAd() {
-        System.out.println("AICI E STANDARTD");
+        // System.out.println("AICI E STANDARTD");
         for (Map.Entry<Song, Integer> entry : watchedSongsNormal.entrySet()) {
-            System.out.println("DAM " + addPrice * entry.getValue() / totalNoWatchedSongsNormal + " pt " + entry.getKey().getName() + " -- " +  entry.getKey().getArtist());
-            entry.getKey().addRevenue(addPrice * entry.getValue() / totalNoWatchedSongsNormal);
+            // System.out.println("DAM " + addPrice * entry.getValue() / totalNoWatchedSongsNormal + " pt " + entry.getKey().getName() + " -- " +  entry.getKey().getArtist());
+            entry.getKey().addRevenue(adPrice * entry.getValue() / totalNoWatchedSongsNormal);
         }
 
-        System.out.println("GATA CU DATUL\n");
+        // System.out.println("GATA CU DATUL\n");
         totalNoWatchedSongsNormal = 0;
         watchedSongsNormal = new HashMap<>();
     }

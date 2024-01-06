@@ -3357,8 +3357,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 2851,
-  "message" : "Search returned 2 results",
-  "results" : [ "In the Closet", "In the Closet" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "In the Closet" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -3580,8 +3580,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 3021,
-  "message" : "Search returned 2 results",
-  "results" : [ "Heal the World", "Heal the World" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Heal the World" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -4184,8 +4184,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 3853,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why You Wanna Trip on Me", "Why You Wanna Trip on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why You Wanna Trip on Me" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -4232,8 +4232,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 3887,
-  "message" : "Search returned 2 results",
-  "results" : [ "Can't Let Her Get Away", "Can't Let Her Get Away" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Can't Let Her Get Away" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -4959,8 +4959,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 4775,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -5101,8 +5101,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 5050,
-  "message" : "Search returned 2 results",
-  "results" : [ "She Drives Me Wild", "She Drives Me Wild" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "She Drives Me Wild" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -5122,8 +5122,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 5084,
-  "message" : "Search returned 2 results",
-  "results" : [ "Give in to Me", "Give in to Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Give in to Me" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -5196,8 +5196,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 5210,
-  "message" : "Search returned 2 results",
-  "results" : [ "Heal the World", "Heal the World" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Heal the World" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -5243,8 +5243,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5319,
-  "message" : "Search returned 2 results",
-  "results" : [ "Black or White", "Black or White" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Black or White" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -5482,8 +5482,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5666,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -5630,8 +5630,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 5852,
-  "message" : "Search returned 2 results",
-  "results" : [ "Give in to Me", "Give in to Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Give in to Me" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -5715,8 +5715,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 6000,
-  "message" : "Search returned 2 results",
-  "results" : [ "Heal the World", "Heal the World" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Heal the World" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -5768,8 +5768,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 6028,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why You Wanna Trip on Me", "Why You Wanna Trip on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why You Wanna Trip on Me" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -5784,8 +5784,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 6062,
-  "message" : "Search returned 2 results",
-  "results" : [ "Keep the Faith", "Keep the Faith" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Keep the Faith" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -6001,8 +6001,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 6314,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dangerous", "Dangerous" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dangerous" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -6017,8 +6017,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 6315,
-  "message" : "Search returned 2 results",
-  "results" : [ "Keep the Faith", "Keep the Faith" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Keep the Faith" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -6097,8 +6097,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 6401,
-  "message" : "Search returned 2 results",
-  "results" : [ "Will You Be There", "Will You Be There" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Will You Be There" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -6155,8 +6155,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 6452,
-  "message" : "Search returned 2 results",
-  "results" : [ "Can't Let Her Get Away", "Can't Let Her Get Away" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Can't Let Her Get Away" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -6250,8 +6250,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 6596,
-  "message" : "Search returned 2 results",
-  "results" : [ "In the Closet", "In the Closet" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "In the Closet" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -6340,8 +6340,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 6672,
-  "message" : "Search returned 2 results",
-  "results" : [ "Heal the World", "Heal the World" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Heal the World" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -6372,8 +6372,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 6726,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dangerous", "Dangerous" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dangerous" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -6441,8 +6441,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 6796,
-  "message" : "Search returned 2 results",
-  "results" : [ "Can't Let Her Get Away", "Can't Let Her Get Away" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Can't Let Her Get Away" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -6457,8 +6457,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 6830,
-  "message" : "Search returned 2 results",
-  "results" : [ "Give in to Me", "Give in to Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Give in to Me" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -6542,8 +6542,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 6888,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -6648,8 +6648,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7066,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why You Wanna Trip on Me", "Why You Wanna Trip on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why You Wanna Trip on Me" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -6966,8 +6966,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7430,
-  "message" : "Search returned 2 results",
-  "results" : [ "Gone Too Soon", "Gone Too Soon" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Gone Too Soon" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -7125,8 +7125,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7608,
-  "message" : "Search returned 2 results",
-  "results" : [ "Gone Too Soon", "Gone Too Soon" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Gone Too Soon" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -7215,8 +7215,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7679,
-  "message" : "Search returned 3 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -7522,8 +7522,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7928,
-  "message" : "Search returned 3 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -7586,8 +7586,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7988,
-  "message" : "Search returned 2 results",
-  "results" : [ "Will You Be There", "Will You Be There" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Will You Be There" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -7655,8 +7655,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8051,
-  "message" : "Search returned 2 results",
-  "results" : [ "How High?", "How High?" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "How High?" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -7692,8 +7692,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8075,
-  "message" : "Search returned 3 results",
-  "results" : [ "Dancing Queen", "Dancing Queen", "Dancing Queen" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Dancing Queen", "Dancing Queen" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -7792,8 +7792,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8190,
-  "message" : "Search returned 3 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -7840,8 +7840,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8201,
-  "message" : "Search returned 2 results",
-  "results" : [ "Let It Will Be", "Let It Will Be" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Let It Will Be" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -7872,8 +7872,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8235,
-  "message" : "Search returned 2 results",
-  "results" : [ "Forbidden Love", "Forbidden Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Forbidden Love" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -7993,8 +7993,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8333,
-  "message" : "Search returned 2 results",
-  "results" : [ "Can't Let Her Get Away", "Can't Let Her Get Away" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Can't Let Her Get Away" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -8047,7 +8047,7 @@
   "command" : "removeAlbum",
   "user" : "ABBA",
   "timestamp" : 8354,
-  "message" : "ABBA deleted the album successfully."
+  "message" : "ABBA can't delete this album."
 }, {
   "command" : "buyPremium",
   "user" : "carol19",
@@ -8231,8 +8231,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8500,
-  "message" : "Search returned 4 results",
-  "results" : [ "I Have a Dream", "I Have a Dream", "I Have a Dream", "I Have a Dream" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "I Have a Dream", "I Have a Dream" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -8247,7 +8247,7 @@
   "command" : "addAlbum",
   "user" : "ABBA",
   "timestamp" : 8504,
-  "message" : "ABBA has added new album successfully."
+  "message" : "ABBA has another album with the same name."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8363,8 +8363,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8595,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -8395,8 +8395,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8625,
-  "message" : "Search returned 2 results",
-  "results" : [ "She Drives Me Wild", "She Drives Me Wild" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "She Drives Me Wild" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -8416,8 +8416,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8639,
-  "message" : "Search returned 5 results",
-  "results" : [ "Carol", "Carol", "Carol (Single Version)", "Caroline No", "Caroline No" ]
+  "message" : "Search returned 4 results",
+  "results" : [ "Carol", "Carol", "Carol (Single Version)", "Caroline No" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -8432,8 +8432,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8659,
-  "message" : "Search returned 2 results",
-  "results" : [ "Will You Be There", "Will You Be There" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Will You Be There" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -8522,8 +8522,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8773,
-  "message" : "Search returned 2 results",
-  "results" : [ "Remember the Time", "Remember the Time" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Remember the Time" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -8554,8 +8554,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8784,
-  "message" : "Search returned 2 results",
-  "results" : [ "My Love, My Life", "My Love, My Life" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My Love, My Life" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -8638,8 +8638,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8875,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -8691,8 +8691,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8902,
-  "message" : "Search returned 3 results",
-  "results" : [ "Lay All Your Love on Me", "Lay All Your Love on Me", "Lay All Your Love on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Lay All Your Love on Me" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -8733,8 +8733,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8961,
-  "message" : "Search returned 2 results",
-  "results" : [ "She Drives Me Wild", "She Drives Me Wild" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "She Drives Me Wild" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -8765,8 +8765,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8999,
-  "message" : "Search returned 2 results",
-  "results" : [ "Express Yourself", "Express Yourself" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Express Yourself" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -8812,8 +8812,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 9039,
-  "message" : "Search returned 2 results",
-  "results" : [ "Let It Will Be", "Let It Will Be" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Let It Will Be" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -8828,8 +8828,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 9039,
-  "message" : "Search returned 4 results",
-  "results" : [ "I Have a Dream", "I Have a Dream", "I Have a Dream", "I Have a Dream" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "I Have a Dream", "I Have a Dream" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -8860,8 +8860,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9048,
-  "message" : "Search returned 2 results",
-  "results" : [ "Forbidden Love", "Forbidden Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Forbidden Love" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -8905,8 +8905,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 9053,
-  "message" : "Search returned 2 results",
-  "results" : [ "Jam", "Jam" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Jam" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -8926,8 +8926,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 9108,
-  "message" : "Search returned 3 results",
-  "results" : [ "Hung Up", "Hung Up", "Hung Up" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Hung Up", "Hung Up" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -8974,8 +8974,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9154,
-  "message" : "Search returned 2 results",
-  "results" : [ "Isaac", "Isaac" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Isaac" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -8995,8 +8995,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9181,
-  "message" : "Search returned 3 results",
-  "results" : [ "Like a Prayer", "Like a Prayer", "Like a Prayer" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Like a Prayer", "Like a Prayer" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -9011,8 +9011,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 9181,
-  "message" : "Search returned 2 results",
-  "results" : [ "One of Us", "One of Us" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "One of Us" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -9112,8 +9112,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9343,
-  "message" : "Search returned 3 results",
-  "results" : [ "Express Yourself", "Express Yourself", "Express Yourself" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Express Yourself", "Express Yourself" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -9133,8 +9133,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 9407,
-  "message" : "Search returned 2 results",
-  "results" : [ "Promise to Try", "Promise to Try" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Promise to Try" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -9170,8 +9170,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9419,
-  "message" : "Search returned 2 results",
-  "results" : [ "Future Lovers", "Future Lovers" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Future Lovers" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -9267,8 +9267,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9508,
-  "message" : "Search returned 2 results",
-  "results" : [ "Oh Father", "Oh Father" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Oh Father" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -9380,8 +9380,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9582,
-  "message" : "Search returned 2 results",
-  "results" : [ "Get Together", "Get Together" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Get Together" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -9412,8 +9412,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 9636,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Love New York", "I Love New York" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Love New York" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -9460,8 +9460,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 9660,
-  "message" : "Search returned 2 results",
-  "results" : [ "Pray For Spanish Eyes", "Pray For Spanish Eyes" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Pray For Spanish Eyes" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -9481,8 +9481,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 9670,
-  "message" : "Search returned 2 results",
-  "results" : [ "Act of Contrition", "Act of Contrition" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Act of Contrition" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -9502,8 +9502,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 9700,
-  "message" : "Search returned 5 results",
-  "results" : [ "Carol", "Carol", "Carol (Single Version)", "Caroline No", "Caroline No" ]
+  "message" : "Search returned 4 results",
+  "results" : [ "Carol", "Carol", "Carol (Single Version)", "Caroline No" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -9534,8 +9534,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9723,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why Did It Have to Be Me", "Why Did It Have to Be Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why Did It Have to Be Me" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -9566,8 +9566,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9747,
-  "message" : "Search returned 2 results",
-  "results" : [ "Forbidden Love", "Forbidden Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Forbidden Love" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -9619,8 +9619,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 9789,
-  "message" : "Search returned 2 results",
-  "results" : [ "Heal the World", "Heal the World" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Heal the World" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -9656,8 +9656,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 9810,
-  "message" : "Search returned 3 results",
-  "results" : [ "Express Yourself", "Express Yourself", "Express Yourself" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Express Yourself", "Express Yourself" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -9693,8 +9693,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 9834,
-  "message" : "Search returned 2 results",
-  "results" : [ "Tiger", "Tiger" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Tiger" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -9740,8 +9740,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9880,
-  "message" : "Search returned 2 results",
-  "results" : [ "Me and I", "Me and I" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Me and I" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -9777,8 +9777,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 9914,
-  "message" : "Search returned 4 results",
-  "results" : [ "Chiquitita", "Chiquitita", "Chiquitita", "Chiquitita" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chiquitita", "Chiquitita" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -9819,8 +9819,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 9929,
-  "message" : "Search returned 2 results",
-  "results" : [ "On and On and On", "On and On and On" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "On and On and On" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -9835,8 +9835,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 9937,
-  "message" : "Search returned 2 results",
-  "results" : [ "Push", "Push" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Push" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -9851,8 +9851,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 9942,
-  "message" : "Search returned 2 results",
-  "results" : [ "Shake It Off", "Shake It Off" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Shake It Off" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -9867,7 +9867,7 @@
   "command" : "removeAlbum",
   "user" : "ABBA",
   "timestamp" : 9947,
-  "message" : "ABBA deleted the album successfully."
+  "message" : "ABBA can't delete this album."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -9888,8 +9888,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 9971,
-  "message" : "Search returned 2 results",
-  "results" : [ "Like It or Not", "Like It or Not" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Like It or Not" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -9936,8 +9936,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10005,
-  "message" : "Search returned 2 results",
-  "results" : [ "Tiger", "Tiger" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Tiger" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -9968,8 +9968,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10048,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Piper", "The Piper" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Piper" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10021,8 +10021,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10073,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why Did It Have to Be Me", "Why Did It Have to Be Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why Did It Have to Be Me" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -10053,8 +10053,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10092,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why Did It Have to Be Me", "Why Did It Have to Be Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why Did It Have to Be Me" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10069,7 +10069,7 @@
   "command" : "addAlbum",
   "user" : "ABBA",
   "timestamp" : 10097,
-  "message" : "ABBA has added new album successfully."
+  "message" : "ABBA has another album with the same name."
 }, {
   "command" : "adBreak",
   "user" : "jack29",
@@ -10079,8 +10079,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10131,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10111,8 +10111,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10151,
-  "message" : "Search returned 2 results",
-  "results" : [ "S.O.S.", "S.O.S." ]
+  "message" : "Search returned 1 results",
+  "results" : [ "S.O.S." ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10175,8 +10175,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10195,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Way Old Friends Do", "The Way Old Friends Do" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Way Old Friends Do" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10223,8 +10223,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10250,
-  "message" : "Search returned 3 results",
-  "results" : [ "Angeleyes", "Angeleyes", "Angeleyes" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Angeleyes" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10260,8 +10260,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10278,
-  "message" : "Search returned 5 results",
-  "results" : [ "Voulez-Vous", "Voulez-Vous", "Voulez-Vous", "Voulez-Vous", "Voulez-Vous" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Voulez-Vous", "Voulez-Vous" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10276,8 +10276,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10292,
-  "message" : "Search returned 4 results",
-  "results" : [ "Lay All Your Love on Me", "Lay All Your Love on Me", "Lay All Your Love on Me", "Lay All Your Love on Me" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Lay All Your Love on Me", "Lay All Your Love on Me" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10292,8 +10292,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10293,
-  "message" : "Search returned 2 results",
-  "results" : [ "Forbidden Love", "Forbidden Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Forbidden Love" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -10388,8 +10388,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10378,
-  "message" : "Search returned 5 results",
-  "results" : [ "Chiquitita", "Chiquitita", "Chiquitita", "Chiquitita", "Chiquitita" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chiquitita", "Chiquitita" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10436,8 +10436,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10429,
-  "message" : "Search returned 4 results",
-  "results" : [ "Super Trouper", "Super Trouper", "Super Trouper", "Super Trouper" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Super Trouper", "Super Trouper" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10452,8 +10452,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10432,
-  "message" : "Search returned 3 results",
-  "results" : [ "The King Has Lost His Crown", "The King Has Lost His Crown", "The King Has Lost His Crown" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The King Has Lost His Crown" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10468,8 +10468,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10435,
-  "message" : "Search returned 2 results",
-  "results" : [ "Push", "Push" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Push" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -10487,17 +10487,17 @@
   "result" : {
     "topAlbums" : {
       "Thriller 25 Super Deluxe Edition" : 50,
-      "Off the Wall" : 30,
-      "Dangerous" : 8
+      "Dangerous" : 45,
+      "Off the Wall" : 30
     },
     "topSongs" : {
+      "Jam" : 7,
+      "Heal the World" : 6,
       "Wanna Be Startin' Somethin' 2008 with Akon - Thriller 25th Anniversary Remix" : 6,
       "Beat It - Single Version" : 5,
-      "Get on the Floor" : 4,
-      "Quincy Jones Interview #5" : 4,
-      "She's Out of My Life" : 4
+      "Can't Let Her Get Away" : 5
     },
-    "topFans" : [ "henry26", "david27", "bob35", "carol19", "frank21" ],
+    "topFans" : [ "henry26", "david27", "frank21", "carol19", "jack29" ],
     "listeners" : 10
   }
 }, {
@@ -10568,8 +10568,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10537,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Way Old Friends Do", "The Way Old Friends Do" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Way Old Friends Do" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10616,13 +10616,13 @@
   "command" : "updateRecommendations",
   "user" : "frank21",
   "timestamp" : 10594,
-  "message" : "The recommendations for user frank21 have been updated successfully."
+  "message" : "No new recommendations were found"
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10624,
-  "message" : "Search returned 3 results",
-  "results" : [ "Angeleyes", "Angeleyes", "Angeleyes" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Angeleyes" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10658,8 +10658,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10644,
-  "message" : "Search returned 5 results",
-  "results" : [ "I Have a Dream", "I Have a Dream", "I Have a Dream", "I Have a Dream", "I Have a Dream" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "I Have a Dream", "I Have a Dream" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10690,8 +10690,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10682,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money, Money, Money", "Money, Money, Money", "Money, Money, Money", "Money, Money, Money" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Money, Money, Money", "Money, Money, Money" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10706,8 +10706,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10744,
-  "message" : "Search returned 2 results",
-  "results" : [ "How High?", "How High?" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "How High?" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -10722,8 +10722,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10752,
-  "message" : "Search returned 2 results",
-  "results" : [ "Our Last Summer", "Our Last Summer" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Our Last Summer" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10738,8 +10738,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10774,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10754,8 +10754,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10786,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10770,8 +10770,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10881,
-  "message" : "Search returned 2 results",
-  "results" : [ "S.O.S.", "S.O.S." ]
+  "message" : "Search returned 1 results",
+  "results" : [ "S.O.S." ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10807,8 +10807,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10920,
-  "message" : "Search returned 2 results",
-  "results" : [ "Get Together", "Get Together" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Get Together" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -10823,8 +10823,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 10931,
-  "message" : "Search returned 4 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10839,8 +10839,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10933,
-  "message" : "Search returned 2 results",
-  "results" : [ "Our Last Summer", "Our Last Summer" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Our Last Summer" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10855,8 +10855,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11062,
-  "message" : "Search returned 3 results",
-  "results" : [ "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Lovers (Live a Little Longer)" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10871,8 +10871,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11080,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money, Money, Money", "Money, Money, Money", "Money, Money, Money", "Money, Money, Money" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Money, Money, Money", "Money, Money, Money" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -10903,8 +10903,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11154,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dear Jessie", "Dear Jessie" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dear Jessie" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -10919,8 +10919,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11166,
-  "message" : "Search returned 2 results",
-  "results" : [ "When I Kissed the Teacher", "When I Kissed the Teacher" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "When I Kissed the Teacher" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -10935,8 +10935,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11172,
-  "message" : "Search returned 2 results",
-  "results" : [ "Take a Chance on Me", "Take a Chance on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Take a Chance on Me" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -10956,8 +10956,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11198,
-  "message" : "Search returned 2 results",
-  "results" : [ "Isaac", "Isaac" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Isaac" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -10988,8 +10988,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11257,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Know Places", "I Know Places" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Know Places" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -11004,8 +11004,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11265,
-  "message" : "Search returned 3 results",
-  "results" : [ "Kisses of Fire", "Kisses of Fire", "Kisses of Fire" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Kisses of Fire" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -11025,8 +11025,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11291,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Wish You Would", "I Wish You Would" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Wish You Would" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -11041,8 +11041,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11304,
-  "message" : "Search returned 2 results",
-  "results" : [ "Thank You for the Music", "Thank You for the Music" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Thank You for the Music" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -11073,8 +11073,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11336,
-  "message" : "Search returned 3 results",
-  "results" : [ "Cherish", "Cherish", "Cherish" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Cherish", "Cherish" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11147,8 +11147,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11424,
-  "message" : "Search returned 2 results",
-  "results" : [ "That's Me", "That's Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "That's Me" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -11168,8 +11168,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11484,
-  "message" : "Search returned 3 results",
-  "results" : [ "Hung Up", "Hung Up", "Hung Up" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Hung Up", "Hung Up" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11184,8 +11184,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11496,
-  "message" : "Search returned 2 results",
-  "results" : [ "Style", "Style" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Style" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -11274,8 +11274,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11653,
-  "message" : "Search returned 2 results",
-  "results" : [ "Happy New Year", "Happy New Year" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Happy New Year" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11354,8 +11354,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11761,
-  "message" : "Search returned 5 results",
-  "results" : [ "Clean", "Cleanin' Out My Closet", "Clean", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Clean", "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -11370,8 +11370,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11784,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Piper", "The Piper" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Piper" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11434,8 +11434,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11837,
-  "message" : "Search returned 2 results",
-  "results" : [ "Shake It Off", "Shake It Off" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Shake It Off" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -11466,8 +11466,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11864,
-  "message" : "Search returned 5 results",
-  "results" : [ "Clean", "Cleanin' Out My Closet", "Clean", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Clean", "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -11534,8 +11534,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11897,
-  "message" : "Search returned 4 results",
-  "results" : [ "Super Trouper", "Super Trouper", "Super Trouper", "Super Trouper" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Super Trouper", "Super Trouper" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11550,8 +11550,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11899,
-  "message" : "Search returned 3 results",
-  "results" : [ "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Lovers (Live a Little Longer)" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -11630,8 +11630,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12003,
-  "message" : "Search returned 2 results",
-  "results" : [ "Mamma Mia", "Mamma Mia" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Mamma Mia" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -11683,8 +11683,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12033,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dum Dum Diddle", "Dum Dum Diddle" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dum Dum Diddle" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11715,13 +11715,13 @@
   "command" : "updateRecommendations",
   "user" : "grace25",
   "timestamp" : 12068,
-  "message" : "The recommendations for user grace25 have been updated successfully."
+  "message" : "No new recommendations were found"
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12104,
-  "message" : "Search returned 2 results",
-  "results" : [ "Gimme! Gimme! Gimme! (A Man After Midnight)", "Gimme! Gimme! Gimme! (A Man After Midnight)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Gimme! Gimme! Gimme! (A Man After Midnight)" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -11736,8 +11736,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12109,
-  "message" : "Search returned 3 results",
-  "results" : [ "Kisses of Fire", "Kisses of Fire", "Kisses of Fire" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Kisses of Fire" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -11800,8 +11800,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12156,
-  "message" : "Search returned 2 results",
-  "results" : [ "Blank Space", "Blank Space" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blank Space" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -11837,8 +11837,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12207,
-  "message" : "Search returned 2 results",
-  "results" : [ "Gimme! Gimme! Gimme! (A Man After Midnight)", "Gimme! Gimme! Gimme! (A Man After Midnight)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Gimme! Gimme! Gimme! (A Man After Midnight)" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -11853,8 +11853,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12221,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Piper", "The Piper" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Piper" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -11922,8 +11922,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12248,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -11970,8 +11970,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12324,
-  "message" : "Search returned 2 results",
-  "results" : [ "When I Kissed the Teacher", "When I Kissed the Teacher" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "When I Kissed the Teacher" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -12018,8 +12018,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12351,
-  "message" : "Search returned 2 results",
-  "results" : [ "Mamma Mia", "Mamma Mia" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Mamma Mia" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12034,8 +12034,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12351,
-  "message" : "Search returned 2 results",
-  "results" : [ "Style", "Style" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Style" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -12055,8 +12055,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12395,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dum Dum Diddle", "Dum Dum Diddle" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dum Dum Diddle" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12156,8 +12156,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12484,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money, Money, Money", "Money, Money, Money", "Money, Money, Money", "Money, Money, Money" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Money, Money, Money", "Money, Money, Money" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12241,8 +12241,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12563,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dum Dum Diddle", "Dum Dum Diddle" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dum Dum Diddle" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12273,8 +12273,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12576,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Piper", "The Piper" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Piper" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12305,8 +12305,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12652,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12337,8 +12337,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12675,
-  "message" : "Search returned 2 results",
-  "results" : [ "Wildest Dreams", "Wildest Dreams" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Wildest Dreams" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -12353,8 +12353,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12679,
-  "message" : "Search returned 4 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12470,8 +12470,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12799,
-  "message" : "Search returned 4 results",
-  "results" : [ "Dancing Queen", "Dancing Queen", "Dancing Queen", "Dancing Queen" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Dancing Queen", "Dancing Queen" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12486,8 +12486,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12799,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money, Money, Money", "Money, Money, Money", "Money, Money, Money", "Money, Money, Money" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Money, Money, Money", "Money, Money, Money" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12523,8 +12523,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12865,
-  "message" : "Search returned 2 results",
-  "results" : [ "Blank Space", "Blank Space" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blank Space" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -12544,8 +12544,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12891,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dum Dum Diddle", "Dum Dum Diddle" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dum Dum Diddle" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12576,8 +12576,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12907,
-  "message" : "Search returned 2 results",
-  "results" : [ "This Love", "This Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "This Love" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -12592,8 +12592,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12914,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Piper", "The Piper" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Piper" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12640,8 +12640,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12980,
-  "message" : "Search returned 3 results",
-  "results" : [ "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)", "Lovers (Live a Little Longer)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Lovers (Live a Little Longer)" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -12656,8 +12656,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12980,
-  "message" : "Search returned 2 results",
-  "results" : [ "All You Had to Do Was Stay", "All You Had to Do Was Stay" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "All You Had to Do Was Stay" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -12688,8 +12688,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13017,
-  "message" : "Search returned 3 results",
-  "results" : [ "Angeleyes", "Angeleyes", "Angeleyes" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Angeleyes" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12800,8 +12800,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13145,
-  "message" : "Search returned 2 results",
-  "results" : [ "Me and I", "Me and I" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Me and I" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12832,8 +12832,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13163,
-  "message" : "Search returned 2 results",
-  "results" : [ "How You Get the Girl", "How You Get the Girl" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "How You Get the Girl" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -12848,8 +12848,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13193,
-  "message" : "Search returned 2 results",
-  "results" : [ "This Love", "This Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "This Love" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -12880,8 +12880,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13214,
-  "message" : "Search returned 2 results",
-  "results" : [ "That's Me", "That's Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "That's Me" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -12896,8 +12896,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13223,
-  "message" : "Search returned 2 results",
-  "results" : [ "How High?", "How High?" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "How High?" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -12944,8 +12944,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13311,
-  "message" : "Search returned 4 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13013,8 +13013,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13431,
-  "message" : "Search returned 2 results",
-  "results" : [ "Andante, Andante", "Andante, Andante" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Andante, Andante" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13029,8 +13029,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13455,
-  "message" : "Search returned 2 results",
-  "results" : [ "Keep It Together", "Keep It Together" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Keep It Together" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -13078,12 +13078,12 @@
   "user" : "jack29",
   "timestamp" : 13487,
   "message" : "Search returned 5 results",
-  "results" : [ "One of Us", "One", "One Step Closer", "One Tree Hill", "One Piece at a Time" ]
+  "results" : [ "One", "One Step Closer", "One Tree Hill", "One Piece at a Time", "One of Us" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13487,
-  "message" : "Successfully selected One of Us."
+  "message" : "Successfully selected One."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -13098,8 +13098,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13570,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Way Old Friends Do", "The Way Old Friends Do" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Way Old Friends Do" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13183,8 +13183,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13738,
-  "message" : "Search returned 2 results",
-  "results" : [ "Get Together", "Get Together" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Get Together" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -13406,8 +13406,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 14069,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dear Jessie", "Dear Jessie" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dear Jessie" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -13422,8 +13422,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 14138,
-  "message" : "Search returned 2 results",
-  "results" : [ "Future Lovers", "Future Lovers" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Future Lovers" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -13454,8 +13454,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14166,
-  "message" : "Search returned 2 results",
-  "results" : [ "When I Kissed the Teacher", "When I Kissed the Teacher" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "When I Kissed the Teacher" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -13555,8 +13555,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14257,
-  "message" : "Search returned 2 results",
-  "results" : [ "Take a Chance on Me", "Take a Chance on Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Take a Chance on Me" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -13572,12 +13572,12 @@
   "user" : "bob35",
   "timestamp" : 14325,
   "message" : "Search returned 5 results",
-  "results" : [ "One of Us", "One", "One Step Closer", "One Tree Hill", "One Piece at a Time" ]
+  "results" : [ "One", "One Step Closer", "One Tree Hill", "One Piece at a Time", "One of Us" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 14325,
-  "message" : "Successfully selected One of Us."
+  "message" : "Successfully selected One."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -13587,8 +13587,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 14334,
-  "message" : "Search returned 2 results",
-  "results" : [ "Blank Space", "Blank Space" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blank Space" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13635,8 +13635,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14379,
-  "message" : "Search returned 3 results",
-  "results" : [ "As Good as New", "As Good as New", "As Good as New" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "As Good as New" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -13709,8 +13709,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 14449,
-  "message" : "Search returned 2 results",
-  "results" : [ "This Love", "This Love" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "This Love" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13757,8 +13757,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 14483,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Know Places", "I Know Places" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Know Places" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13773,8 +13773,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 14517,
-  "message" : "Search returned 2 results",
-  "results" : [ "Blank Space", "Blank Space" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blank Space" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -13826,8 +13826,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14581,
-  "message" : "Search returned 3 results",
-  "results" : [ "The King Has Lost His Crown", "The King Has Lost His Crown", "The King Has Lost His Crown" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The King Has Lost His Crown" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -13948,8 +13948,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14697,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Way Old Friends Do", "The Way Old Friends Do" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Way Old Friends Do" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14044,8 +14044,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 14832,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Know Places", "I Know Places" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Know Places" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -14060,8 +14060,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 14840,
-  "message" : "Search returned 2 results",
-  "results" : [ "All You Had to Do Was Stay", "All You Had to Do Was Stay" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "All You Had to Do Was Stay" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -14145,8 +14145,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14881,
-  "message" : "Search returned 2 results",
-  "results" : [ "S.O.S.", "S.O.S." ]
+  "message" : "Search returned 1 results",
+  "results" : [ "S.O.S." ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14180,18 +14180,18 @@
   "result" : {
     "topAlbums" : {
       "Celebration (Double Disc Version)" : 59,
+      "Confessions on a Dance Floor" : 28,
       "Ray of Light" : 26,
-      "Like a Prayer" : 11,
-      "Confessions on a Dance Floor" : 6
+      "Like a Prayer" : 23
     },
     "topSongs" : {
       "Express Yourself" : 8,
+      "Forbidden Love" : 6,
       "Like a Prayer" : 5,
       "The Power of Good-Bye" : 5,
-      "Dress You Up" : 4,
-      "Drowned World/Substitute for Love" : 4
+      "Dear Jessie" : 4
     },
-    "topFans" : [ "grace25", "henry26", "irene33", "alice22", "david27" ],
+    "topFans" : [ "grace25", "henry26", "irene33", "carol19", "emily30" ],
     "listeners" : 10
   }
 }, {
@@ -14272,8 +14272,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 14980,
-  "message" : "Search returned 2 results",
-  "results" : [ "Tiger", "Tiger" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Tiger" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14304,8 +14304,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 15004,
-  "message" : "Search returned 2 results",
-  "results" : [ "Shake It Off", "Shake It Off" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Shake It Off" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -14341,8 +14341,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15067,
-  "message" : "Search returned 2 results",
-  "results" : [ "Me and I", "Me and I" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Me and I" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14426,8 +14426,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15136,
-  "message" : "Search returned 2 results",
-  "results" : [ "Mamma Mia", "Mamma Mia" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Mamma Mia" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14543,8 +14543,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15242,
-  "message" : "Search returned 2 results",
-  "results" : [ "The Name of the Game", "The Name of the Game" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Name of the Game" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14665,8 +14665,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15389,
-  "message" : "Search returned 3 results",
-  "results" : [ "Kisses of Fire", "Kisses of Fire", "Kisses of Fire" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Kisses of Fire" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14777,8 +14777,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15487,
-  "message" : "Search returned 4 results",
-  "results" : [ "Dancing Queen", "Dancing Queen", "Dancing Queen", "Dancing Queen" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Dancing Queen", "Dancing Queen" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -14979,8 +14979,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15718,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -15139,8 +15139,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 15865,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why Did It Have to Be Me", "Why Did It Have to Be Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why Did It Have to Be Me" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -15298,8 +15298,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16102,
-  "message" : "Search returned 4 results",
-  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Knowing Me, Knowing You", "Knowing Me, Knowing You" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15351,8 +15351,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16222,
-  "message" : "Search returned 2 results",
-  "results" : [ "Why Did It Have to Be Me", "Why Did It Have to Be Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Why Did It Have to Be Me" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15425,8 +15425,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16428,
-  "message" : "Search returned 3 results",
-  "results" : [ "As Good as New", "As Good as New", "As Good as New" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "As Good as New" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15473,8 +15473,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16529,
-  "message" : "Search returned 5 results",
-  "results" : [ "Chiquitita", "Chiquitita", "Chiquitita", "Chiquitita", "Chiquitita" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chiquitita", "Chiquitita" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15553,8 +15553,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16688,
-  "message" : "Search returned 2 results",
-  "results" : [ "Dum Dum Diddle", "Dum Dum Diddle" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Dum Dum Diddle" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15617,8 +15617,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 16777,
-  "message" : "Search returned 2 results",
-  "results" : [ "My Love, My Life", "My Love, My Life" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My Love, My Life" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15803,8 +15803,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 17014,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money, Money, Money", "Money, Money, Money", "Money, Money, Money", "Money, Money, Money" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Money, Money, Money", "Money, Money, Money" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15835,8 +15835,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 17106,
-  "message" : "Search returned 2 results",
-  "results" : [ "That's Me", "That's Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "That's Me" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -15889,12 +15889,12 @@
   "user" : "emily30",
   "timestamp" : 17188,
   "message" : "Search returned 5 results",
-  "results" : [ "One of Us", "One", "One Step Closer", "One Tree Hill", "One Piece at a Time" ]
+  "results" : [ "One", "One Step Closer", "One Tree Hill", "One Piece at a Time", "One of Us" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 17188,
-  "message" : "Successfully selected One of Us."
+  "message" : "Successfully selected One."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -15973,8 +15973,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 17301,
-  "message" : "Search returned 4 results",
-  "results" : [ "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All", "The Winner Takes It All" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "The Winner Takes It All", "The Winner Takes It All" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -16058,8 +16058,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 17444,
-  "message" : "Search returned 3 results",
-  "results" : [ "The Kiss (Skit)", "The Kiss (Skit)", "The Kiss (Skit)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Kiss (Skit)" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16076,19 +16076,20 @@
   "timestamp" : 17448,
   "result" : {
     "topAlbums" : {
-      "ABBA Gold" : 10,
-      "Super Trouper" : 6,
-      "Arrival" : 5
+      "Arrival" : 40,
+      "ABBA Gold" : 34,
+      "Super Trouper" : 26,
+      "Voulez-Vous" : 26
     },
     "topSongs" : {
-      "Dancing Queen" : 2,
-      "Knowing Me, Knowing You" : 2,
-      "Super Trouper" : 2,
-      "The Winner Takes It All" : 2,
-      "Andante, Andante" : 1
+      "The Winner Takes It All" : 10,
+      "Knowing Me, Knowing You" : 8,
+      "Dum Dum Diddle" : 6,
+      "Money, Money, Money" : 6,
+      "Dancing Queen" : 5
     },
-    "topFans" : [ "carol19", "henry26", "frank21" ],
-    "listeners" : 3
+    "topFans" : [ "carol19", "alice22", "frank21", "henry26", "david27" ],
+    "listeners" : 10
   }
 }, {
   "command" : "search",
@@ -16110,8 +16111,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 17463,
-  "message" : "Search returned 3 results",
-  "results" : [ "White America", "White America", "White America" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "White America" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16190,8 +16191,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 17625,
-  "message" : "Search returned 3 results",
-  "results" : [ "Curtains Up (Skit)", "Curtains Up (Skit)", "Curtains Up (Skit)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Curtains Up (Skit)" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16243,8 +16244,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 17660,
-  "message" : "Search returned 3 results",
-  "results" : [ "My Dad's Gone Crazy (feat. Hailie Jade)", "My Dad's Gone Crazy (feat. Hailie Jade)", "My Dad's Gone Crazy (feat. Hailie Jade)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My Dad's Gone Crazy (feat. Hailie Jade)" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16296,8 +16297,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 17793,
-  "message" : "Search returned 3 results",
-  "results" : [ "Superman (feat. Dina Rae)", "Superman (feat. Dina Rae)", "Superman (feat. Dina Rae)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Superman (feat. Dina Rae)" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16333,8 +16334,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 17866,
-  "message" : "Search returned 3 results",
-  "results" : [ "Steve Berman (Skit)", "Steve Berman (Skit)", "Steve Berman (Skit)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Steve Berman (Skit)" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16433,8 +16434,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 17978,
-  "message" : "Search returned 3 results",
-  "results" : [ "Cleanin' Out My Closet", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -16465,8 +16466,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 18023,
-  "message" : "Search returned 3 results",
-  "results" : [ "Business", "Business", "Business" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Business" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16566,8 +16567,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 18170,
-  "message" : "Search returned 3 results",
-  "results" : [ "Hailie's Song", "Hailie's Song", "Hailie's Song" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Hailie's Song" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16614,8 +16615,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 18274,
-  "message" : "Search returned 3 results",
-  "results" : [ "Say What U Say (feat. Dr. Dre)", "Say What U Say (feat. Dr. Dre)", "Say What U Say (feat. Dr. Dre)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say What U Say (feat. Dr. Dre)" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16630,8 +16631,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 18294,
-  "message" : "Search returned 3 results",
-  "results" : [ "Cleanin' Out My Closet", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -16709,8 +16710,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 18331,
-  "message" : "Search returned 3 results",
-  "results" : [ "Without Me", "Without Me", "Without Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Without Me" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16762,8 +16763,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 18362,
-  "message" : "Search returned 5 results",
-  "results" : [ "Clean", "Cleanin' Out My Closet", "Clean", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Clean", "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -16815,8 +16816,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 18428,
-  "message" : "Search returned 3 results",
-  "results" : [ "Business", "Business", "Business" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Business" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16863,8 +16864,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 18476,
-  "message" : "Search returned 3 results",
-  "results" : [ "Business", "Business", "Business" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Business" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16879,8 +16880,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 18506,
-  "message" : "Search returned 3 results",
-  "results" : [ "Without Me", "Without Me", "Without Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Without Me" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -16911,13 +16912,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 18516,
-  "message" : "Search returned 4 results",
-  "results" : [ "Angeleyes", "Angel", "Angeleyes", "Angeleyes" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Angel", "Angeleyes" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 18516,
-  "message" : "Successfully selected Angeleyes."
+  "message" : "Successfully selected Angel."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -17054,8 +17055,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 18679,
-  "message" : "Search returned 2 results",
-  "results" : [ "I Wish You Would", "I Wish You Would" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I Wish You Would" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -17150,8 +17151,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 18800,
-  "message" : "Search returned 3 results",
-  "results" : [ "Sing for the Moment", "Sing for the Moment", "Sing for the Moment" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Sing for the Moment" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -17587,7 +17588,7 @@
   "command" : "updateRecommendations",
   "user" : "irene33",
   "timestamp" : 19187,
-  "message" : "The recommendations for user irene33 have been updated successfully."
+  "message" : "No new recommendations were found"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -17656,8 +17657,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 19258,
-  "message" : "Search returned 3 results",
-  "results" : [ "Drips (feat. Obie Trice)", "Drips (feat. Obie Trice)", "Drips (feat. Obie Trice)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Drips (feat. Obie Trice)" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -17672,8 +17673,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 19263,
-  "message" : "Search returned 3 results",
-  "results" : [ "Say What U Say (feat. Dr. Dre)", "Say What U Say (feat. Dr. Dre)", "Say What U Say (feat. Dr. Dre)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say What U Say (feat. Dr. Dre)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -17741,8 +17742,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 19364,
-  "message" : "Search returned 4 results",
-  "results" : [ "Blue Letter", "Blue Letter", "Blue Letter", "Blue Letter" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blue Letter" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17923,12 +17924,12 @@
   "user" : "henry26",
   "timestamp" : 19545,
   "message" : "Search returned 5 results",
-  "results" : [ "One of Us", "One", "One Step Closer", "One Tree Hill", "One Piece at a Time" ]
+  "results" : [ "One", "One Step Closer", "One Tree Hill", "One Piece at a Time", "One of Us" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 19545,
-  "message" : "Successfully selected One of Us."
+  "message" : "Successfully selected One."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -17938,8 +17939,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 19553,
-  "message" : "Search returned 3 results",
-  "results" : [ "The Kiss (Skit)", "The Kiss (Skit)", "The Kiss (Skit)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The Kiss (Skit)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -18129,8 +18130,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 19722,
-  "message" : "Search returned 3 results",
-  "results" : [ "White America", "White America", "White America" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "White America" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -18400,8 +18401,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 20060,
-  "message" : "Search returned 4 results",
-  "results" : [ "Say You Love Me", "Say You Love Me", "Say You Love Me", "Say You Love Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say You Love Me" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -18480,13 +18481,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 20147,
-  "message" : "Search returned 5 results",
-  "results" : [ "The Chain", "The Chain - 2004 Remastered Edition", "the chain - Live", "The Chain - Demo", "The Chain" ]
+  "message" : "Search returned 4 results",
+  "results" : [ "The Chain - 2004 Remastered Edition", "the chain - Live", "The Chain - Demo", "The Chain" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 20147,
-  "message" : "Successfully selected The Chain."
+  "message" : "Successfully selected The Chain - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -18708,8 +18709,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 20404,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -18745,8 +18746,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 20444,
-  "message" : "Search returned 5 results",
-  "results" : [ "Clean", "Cleanin' Out My Closet", "Clean", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Clean", "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -18761,8 +18762,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 20445,
-  "message" : "Search returned 4 results",
-  "results" : [ "Warm Ways", "Warm Ways", "Warm Ways", "Warm Ways" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Warm Ways" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -18936,8 +18937,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 20600,
-  "message" : "Search returned 2 results",
-  "results" : [ "Welcome to New York", "Welcome to New York" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Welcome to New York" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19143,8 +19144,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 20787,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -19271,8 +19272,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 20922,
-  "message" : "Search returned 4 results",
-  "results" : [ "Steve Berman", "Steve Berman (Skit)", "Steve Berman (Skit)", "Steve Berman (Skit)" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Steve Berman", "Steve Berman (Skit)" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -19303,8 +19304,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 20956,
-  "message" : "Search returned 3 results",
-  "results" : [ "White America", "White America", "White America" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "White America" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -19478,8 +19479,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 21205,
-  "message" : "Search returned 2 results",
-  "results" : [ "Bad Blood", "Bad Blood" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Bad Blood" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19795,15 +19796,15 @@
     "topAlbums" : {
       "Lover" : 36,
       "Fearless" : 34,
-      "reputation" : 33,
-      "1989" : 6
+      "1989" : 33,
+      "reputation" : 33
     },
     "topSongs" : {
       "Fifteen" : 6,
       "So It Goes… 就这样吧" : 6,
+      "Blank Space" : 5,
       "Delicate 易碎" : 5,
-      "Gorgeous 完美情人" : 5,
-      "Love Story" : 5
+      "Gorgeous 完美情人" : 5
     },
     "topFans" : [ "david27", "irene33", "henry26", "frank21", "bob35" ],
     "listeners" : 10
@@ -19876,8 +19877,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 21672,
-  "message" : "Search returned 4 results",
-  "results" : [ "Say You Love Me", "Say You Love Me", "Say You Love Me", "Say You Love Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say You Love Me" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -20293,11 +20294,11 @@
       "Dancing Queen" : 2
     },
     "topAlbums" : {
-      "ABBA Gold" : 16,
+      "ABBA Gold" : 12,
       "Led Zeppelin IV" : 8,
       "Chuck Berry Is On Top" : 7,
-      "1989" : 5,
-      "Super Trouper" : 5
+      "Arrival" : 6,
+      "1989" : 5
     },
     "topEpisodes" : { }
   }
@@ -20400,13 +20401,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 22320,
-  "message" : "Search returned 5 results",
-  "results" : [ "The Chain", "The Chain - 2004 Remastered Edition", "the chain - Live", "The Chain - Demo", "The Chain" ]
+  "message" : "Search returned 4 results",
+  "results" : [ "The Chain - 2004 Remastered Edition", "the chain - Live", "The Chain - Demo", "The Chain" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 22320,
-  "message" : "Successfully selected The Chain."
+  "message" : "Successfully selected The Chain - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -20547,10 +20548,10 @@
       "Taylor Swift" : 13
     },
     "topGenres" : {
-      "pop" : 29,
+      "pop" : 28,
       "country" : 26,
       "classic rock" : 21,
-      "rock" : 14,
+      "rock" : 15,
       "rock and roll" : 13
     },
     "topSongs" : {
@@ -20564,8 +20565,8 @@
       "The Legend of Johnny Cash" : 13,
       "Chuck Berry Is On Top" : 10,
       "Electric Ladyland" : 9,
-      "ABBA Gold" : 8,
-      "Experience Hendrix: The Best of Jimi Hendrix" : 6
+      "Experience Hendrix: The Best of Jimi Hendrix" : 6,
+      "Led Zeppelin" : 6
     },
     "topEpisodes" : { }
   }
@@ -20589,8 +20590,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 22659,
-  "message" : "Search returned 4 results",
-  "results" : [ "Say You Love Me", "Say You Love Me", "Say You Love Me", "Say You Love Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say You Love Me" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20757,7 +20758,7 @@
     },
     "topGenres" : {
       "rock" : 32,
-      "pop" : 22,
+      "pop" : 21,
       "soul" : 12,
       "country" : 11,
       "1979" : 8
@@ -20774,7 +20775,7 @@
       "How to Dismantle an Atomic Bomb" : 9,
       "Broken Machine (Deluxe)" : 8,
       "Voulez-Vous" : 8,
-      "ABBA Gold" : 6
+      "Greatest Hits" : 6
     },
     "topEpisodes" : { }
   }
@@ -20782,8 +20783,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 22941,
-  "message" : "Search returned 5 results",
-  "results" : [ "Monday Morning - Live", "Monday Morning", "Monday Morning", "Monday Morning", "Monday Morning" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Monday Morning - Live", "Monday Morning" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20846,13 +20847,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 23193,
-  "message" : "Search returned 4 results",
-  "results" : [ "I Don't Want to Know", "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 23193,
-  "message" : "Successfully selected I Don't Want to Know."
+  "message" : "Successfully selected I Don't Want To Know - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -20900,12 +20901,12 @@
   "user" : "irene33",
   "timestamp" : 23384,
   "message" : "Search returned 5 results",
-  "results" : [ "Never Going Back", "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental" ]
+  "results" : [ "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental", "Never Going Back Again (early demo)" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 23384,
-  "message" : "Successfully selected Never Going Back."
+  "message" : "Successfully selected Never Going Back Again - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -20915,8 +20916,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 23440,
-  "message" : "Search returned 5 results",
-  "results" : [ "Monday Morning - Live", "Monday Morning", "Monday Morning", "Monday Morning", "Monday Morning" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Monday Morning - Live", "Monday Morning" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -20996,12 +20997,12 @@
   "user" : "emily30",
   "timestamp" : 23566,
   "message" : "Search returned 5 results",
-  "results" : [ "Oh Daddy", "Oh Daddy - 2004 Remastered Edition", "Oh Daddy - Live", "Oh Daddy - Early Take", "Oh Daddy (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Oh Daddy - 2004 Remastered Edition", "Oh Daddy - Live", "Oh Daddy - Early Take", "Oh Daddy (Sessions, Roughs & Outtakes)", "Oh Daddy" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 23566,
-  "message" : "Successfully selected Oh Daddy."
+  "message" : "Successfully selected Oh Daddy - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -21124,12 +21125,12 @@
   "user" : "emily30",
   "timestamp" : 23800,
   "message" : "Search returned 5 results",
-  "results" : [ "Never Going Back", "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental" ]
+  "results" : [ "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental", "Never Going Back Again (early demo)" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 23800,
-  "message" : "Successfully selected Never Going Back."
+  "message" : "Successfully selected Never Going Back Again - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -21155,8 +21156,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 23850,
-  "message" : "Search returned 3 results",
-  "results" : [ "Drips (feat. Obie Trice)", "Drips (feat. Obie Trice)", "Drips (feat. Obie Trice)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Drips (feat. Obie Trice)" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -21190,8 +21191,8 @@
   "result" : {
     "topAlbums" : {
       "All That You Can't Leave Behind" : 36,
+      "Achtung Baby" : 35,
       "The Joshua Tree" : 33,
-      "Achtung Baby" : 31,
       "How to Dismantle an Atomic Bomb" : 24
     },
     "topSongs" : {
@@ -21199,9 +21200,9 @@
       "So Cruel" : 6,
       "With or Without You" : 6,
       "In a Little While" : 5,
-      "The Fly" : 5
+      "One" : 5
     },
-    "topFans" : [ "alice22", "emily30", "david27", "grace25", "bob35" ],
+    "topFans" : [ "alice22", "emily30", "david27", "bob35", "grace25" ],
     "listeners" : 10
   }
 }, {
@@ -21224,8 +21225,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 23925,
-  "message" : "Search returned 3 results",
-  "results" : [ "Cleanin' Out My Closet", "Cleanin' Out My Closet", "Cleanin' Out My Closet" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Cleanin' Out My Closet" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -21294,12 +21295,12 @@
   "user" : "emily30",
   "timestamp" : 24049,
   "message" : "Search returned 5 results",
-  "results" : [ "Dreams", "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)", "Dreams" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 24049,
-  "message" : "Successfully selected Dreams."
+  "message" : "Successfully selected Dreams - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -21362,8 +21363,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 24176,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -21468,8 +21469,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 24494,
-  "message" : "Search returned 3 results",
-  "results" : [ "'Till I Collapse (feat. Nate Dogg)", "'Till I Collapse (feat. Nate Dogg)", "'Till I Collapse (feat. Nate Dogg)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "'Till I Collapse (feat. Nate Dogg)" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -21548,8 +21549,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 24791,
-  "message" : "Search returned 3 results",
-  "results" : [ "'Till I Collapse (feat. Nate Dogg)", "'Till I Collapse (feat. Nate Dogg)", "'Till I Collapse (feat. Nate Dogg)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "'Till I Collapse (feat. Nate Dogg)" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -21643,8 +21644,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 24964,
-  "message" : "Search returned 3 results",
-  "results" : [ "Curtains Close (Skit)", "Curtains Close (Skit)", "Curtains Close (Skit)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Curtains Close (Skit)" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -22065,31 +22066,31 @@
   "timestamp" : 25802,
   "result" : {
     "topArtists" : {
-      "Jimi Hendrix" : 18,
+      "Jimi Hendrix" : 19,
       "Led Zeppelin" : 17,
-      "U2" : 15,
-      "ABBA" : 14,
-      "Fleetwood Mac" : 14
+      "U2" : 16,
+      "Fleetwood Mac" : 14,
+      "ABBA" : 12
     },
     "topGenres" : {
-      "pop" : 33,
-      "rock" : 30,
+      "pop" : 32,
+      "rock" : 31,
       "country" : 14,
       "hard rock" : 14,
-      "classic rock" : 9
+      "justice for silver springs" : 11
     },
     "topSongs" : {
-      "Angeleyes" : 3,
       "Stairway to Heaven" : 3,
       "Amsterdam - NBT" : 2,
+      "Angeleyes" : 2,
       "Bring It on Home" : 2,
       "Can You See Me" : 2
     },
     "topAlbums" : {
       "Are You Experienced" : 13,
       "The Joshua Tree" : 12,
+      "Rumours (Super Deluxe)" : 11,
       "Led Zeppelin II" : 9,
-      "Rumours (Super Deluxe)" : 8,
       "Celebration (Double Disc Version)" : 7
     },
     "topEpisodes" : { }
@@ -22133,7 +22134,7 @@
   "result" : {
     "topAlbums" : {
       "Are You Experienced" : 48,
-      "Experience Hendrix: The Best of Jimi Hendrix" : 44,
+      "Experience Hendrix: The Best of Jimi Hendrix" : 45,
       "Electric Ladyland" : 39,
       "Are You Experienced?" : 8
     },
@@ -22144,7 +22145,7 @@
       "Hey Joe" : 7,
       "Love Or Confusion" : 6
     },
-    "topFans" : [ "frank21", "bob35", "emily30", "grace25", "irene33" ],
+    "topFans" : [ "frank21", "emily30", "bob35", "grace25", "irene33" ],
     "listeners" : 10
   }
 }, {
@@ -22199,13 +22200,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 25925,
-  "message" : "Search returned 4 results",
-  "results" : [ "I Don't Want to Know", "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 25925,
-  "message" : "Successfully selected I Don't Want to Know."
+  "message" : "Successfully selected I Don't Want To Know - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -22248,12 +22249,12 @@
   "user" : "frank21",
   "timestamp" : 26187,
   "message" : "Search returned 5 results",
-  "results" : [ "Go Your Own Way", "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition" ]
+  "results" : [ "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "Go Your Own Way" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 26187,
-  "message" : "Successfully selected Go Your Own Way."
+  "message" : "Successfully selected Go Your Own Way - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -22280,12 +22281,12 @@
   "user" : "frank21",
   "timestamp" : 26391,
   "message" : "Search returned 5 results",
-  "results" : [ "Go Your Own Way", "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition" ]
+  "results" : [ "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "Go Your Own Way" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 26391,
-  "message" : "Successfully selected Go Your Own Way."
+  "message" : "Successfully selected Go Your Own Way - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -22308,7 +22309,7 @@
       "country" : 22,
       "rap" : 21,
       "rock" : 20,
-      "classic rock" : 14
+      "classic rock" : 11
     },
     "topSongs" : {
       "Express Yourself" : 3,
@@ -22346,8 +22347,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 26710,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -22378,8 +22379,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 26979,
-  "message" : "Search returned 4 results",
-  "results" : [ "Landslide", "Landslide", "Landslide", "Landslide" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Landslide" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -22532,8 +22533,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 27535,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -22618,12 +22619,12 @@
   "user" : "grace25",
   "timestamp" : 27726,
   "message" : "Search returned 5 results",
-  "results" : [ "Oh Daddy", "Oh Daddy - 2004 Remastered Edition", "Oh Daddy - Live", "Oh Daddy - Early Take", "Oh Daddy (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Oh Daddy - 2004 Remastered Edition", "Oh Daddy - Live", "Oh Daddy - Early Take", "Oh Daddy (Sessions, Roughs & Outtakes)", "Oh Daddy" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 27726,
-  "message" : "Successfully selected Oh Daddy."
+  "message" : "Successfully selected Oh Daddy - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -22670,8 +22671,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 27853,
-  "message" : "Search returned 4 results",
-  "results" : [ "Sugar Daddy", "Sugar Daddy", "Sugar Daddy", "Sugar Daddy" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Sugar Daddy" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -22686,8 +22687,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 27863,
-  "message" : "Search returned 5 results",
-  "results" : [ "Rhiannon - Live", "Rhiannon", "Rhiannon", "Rhiannon", "Rhiannon" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Rhiannon - Live", "Rhiannon" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -22703,12 +22704,12 @@
   "user" : "grace25",
   "timestamp" : 27887,
   "message" : "Search returned 5 results",
-  "results" : [ "Songbird", "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10" ]
+  "results" : [ "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10", "Songbird (Sessions, Roughs & Outtakes)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 27887,
-  "message" : "Successfully selected Songbird."
+  "message" : "Successfully selected Songbird - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -22718,7 +22719,7 @@
   "command" : "updateRecommendations",
   "user" : "grace25",
   "timestamp" : 27888,
-  "message" : "The recommendations for user grace25 have been updated successfully."
+  "message" : "No new recommendations were found"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22739,8 +22740,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 27933,
-  "message" : "Search returned 3 results",
-  "results" : [ "Superman (feat. Dina Rae)", "Superman (feat. Dina Rae)", "Superman (feat. Dina Rae)" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Superman (feat. Dina Rae)" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -22916,7 +22917,7 @@
   "user" : "henry26",
   "timestamp" : 28401,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't Stop 'Til You Get Enough", "Don't Stop", "Don't Stop - 2004 Remastered Edition", "Don't Stop - Live", "Don't Stop (Sessions, Roughs & Outtakes) - 2004 Remastered Edition" ]
+  "results" : [ "Don't Stop 'Til You Get Enough", "Don't Stop - 2004 Remastered Edition", "Don't Stop - Live", "Don't Stop (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "Don't Stop" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -22936,13 +22937,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 28439,
-  "message" : "Search returned 4 results",
-  "results" : [ "I Don't Want to Know", "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "I Don't Want To Know - 2004 Remastered Edition", "I Don't Want To Know - Early Take", "I Don't Want to Know" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 28439,
-  "message" : "Successfully selected I Don't Want to Know."
+  "message" : "Successfully selected I Don't Want To Know - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -22962,7 +22963,7 @@
     },
     "topGenres" : {
       "pop" : 32,
-      "classic rock" : 30,
+      "classic rock" : 27,
       "country" : 17,
       "rock and roll" : 17,
       "soul" : 13
@@ -22978,8 +22979,8 @@
       "Experience Hendrix: The Best of Jimi Hendrix" : 21,
       "The Great Twenty-Eight" : 14,
       "reputation" : 9,
-      "Led Zeppelin IV (Deluxe Edition)" : 8,
-      "What's Going On" : 8
+      "Arrival" : 8,
+      "Led Zeppelin IV (Deluxe Edition)" : 8
     },
     "topEpisodes" : { }
   }
@@ -23025,12 +23026,12 @@
   "user" : "henry26",
   "timestamp" : 28618,
   "message" : "Search returned 5 results",
-  "results" : [ "Go Your Own Way", "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition" ]
+  "results" : [ "Go Your Own Way - 2004 Remastered Edition", "Go Your Own Way", "Go Your Own Way - Early Take", "Go Your Own Way (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "Go Your Own Way" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 28618,
-  "message" : "Successfully selected Go Your Own Way."
+  "message" : "Successfully selected Go Your Own Way - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -23046,12 +23047,12 @@
   "user" : "grace25",
   "timestamp" : 28640,
   "message" : "Search returned 5 results",
-  "results" : [ "Dreams", "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)", "Dreams" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 28640,
-  "message" : "Successfully selected Dreams."
+  "message" : "Successfully selected Dreams - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -23146,8 +23147,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 28864,
-  "message" : "Search returned 4 results",
-  "results" : [ "Blue Letter", "Blue Letter", "Blue Letter", "Blue Letter" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Blue Letter" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -23200,12 +23201,12 @@
   "user" : "grace25",
   "timestamp" : 29047,
   "message" : "Search returned 5 results",
-  "results" : [ "Songbird", "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10" ]
+  "results" : [ "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10", "Songbird (Sessions, Roughs & Outtakes)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 29047,
-  "message" : "Successfully selected Songbird."
+  "message" : "Successfully selected Songbird - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -23215,8 +23216,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 29150,
-  "message" : "Search returned 3 results",
-  "results" : [ "Sing for the Moment", "Sing for the Moment", "Sing for the Moment" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Sing for the Moment" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -23232,12 +23233,12 @@
   "user" : "grace25",
   "timestamp" : 29150,
   "message" : "Search returned 5 results",
-  "results" : [ "Never Going Back", "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental" ]
+  "results" : [ "Never Going Back Again - 2004 Remastered Edition", "Never Going Back Again", "Never Going Back Again - Acoustic Duet", "Never Going Back Again - (Instrumental", "Never Going Back Again (early demo)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 29150,
-  "message" : "Successfully selected Never Going Back."
+  "message" : "Successfully selected Never Going Back Again - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -23268,8 +23269,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 29286,
-  "message" : "Search returned 5 results",
-  "results" : [ "Rhiannon - Live", "Rhiannon", "Rhiannon", "Rhiannon", "Rhiannon" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Rhiannon - Live", "Rhiannon" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -23334,17 +23335,17 @@
   "timestamp" : 29652,
   "result" : {
     "topAlbums" : {
+      "The Eminem Show" : 38,
       "The Marshall Mathers LP" : 38,
       "The Slim Shady LP" : 34,
-      "Recovery" : 28,
-      "The Eminem Show" : 10
+      "Recovery" : 28
     },
     "topSongs" : {
       "Public Service Announcement 2000" : 6,
+      "Business" : 4,
+      "Cleanin' Out My Closet" : 4,
       "Role Model" : 4,
-      "Space Bound" : 4,
-      "The Way I Am" : 4,
-      "I'm Shady" : 3
+      "Space Bound" : 4
     },
     "topFans" : [ "david27", "irene33", "jack29", "henry26", "grace25" ],
     "listeners" : 10
@@ -23370,12 +23371,12 @@
   "user" : "grace25",
   "timestamp" : 29652,
   "message" : "Search returned 5 results",
-  "results" : [ "Songbird", "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10" ]
+  "results" : [ "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10", "Songbird (Sessions, Roughs & Outtakes)" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 29652,
-  "message" : "Successfully selected Songbird."
+  "message" : "Successfully selected Songbird - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -23385,8 +23386,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 29708,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -23475,8 +23476,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 29899,
-  "message" : "Search returned 4 results",
-  "results" : [ "Say You Love Me", "Say You Love Me", "Say You Love Me", "Say You Love Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say You Love Me" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -23508,12 +23509,12 @@
   "user" : "henry26",
   "timestamp" : 30033,
   "message" : "Search returned 5 results",
-  "results" : [ "Gold Dust Woman", "Gold Dust Woman - 2004 Remastered Edition", "Gold Dust Woman", "Gold Dust Woman - Early Take", "Gold Dust Woman #1 (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Gold Dust Woman - 2004 Remastered Edition", "Gold Dust Woman", "Gold Dust Woman - Early Take", "Gold Dust Woman #1 (Sessions, Roughs & Outtakes)", "Gold Dust Woman (Early Demo) - 2004 Remastered Edition" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 30033,
-  "message" : "Successfully selected Gold Dust Woman."
+  "message" : "Successfully selected Gold Dust Woman - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -23556,12 +23557,12 @@
   "user" : "henry26",
   "timestamp" : 30178,
   "message" : "Search returned 5 results",
-  "results" : [ "Songbird", "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10" ]
+  "results" : [ "Songbird - 2004 Remastered Edition", "Songbird - Live", "Songbird - Demo", "Songbird - Instrumental , Take 10", "Songbird (Sessions, Roughs & Outtakes)" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 30178,
-  "message" : "Successfully selected Songbird."
+  "message" : "Successfully selected Songbird - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -23604,12 +23605,12 @@
   "user" : "david27",
   "timestamp" : 30288,
   "message" : "Search returned 5 results",
-  "results" : [ "Dreams", "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Dreams - 2004 Remastered Edition", "Dreams - Live", "Dreams - Take 2", "Dreams (Sessions, Roughs & Outtakes)", "Dreams" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 30288,
-  "message" : "Successfully selected Dreams."
+  "message" : "Successfully selected Dreams - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "david27",
@@ -23619,8 +23620,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 30415,
-  "message" : "Search returned 4 results",
-  "results" : [ "I'm So Afraid", "I'm So Afraid", "I'm So Afraid", "I'm So Afraid" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "I'm So Afraid" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -23672,8 +23673,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 30906,
-  "message" : "Search returned 4 results",
-  "results" : [ "Say You Love Me", "Say You Love Me", "Say You Love Me", "Say You Love Me" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Say You Love Me" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -23736,7 +23737,7 @@
   "command" : "updateRecommendations",
   "user" : "henry26",
   "timestamp" : 31063,
-  "message" : "The recommendations for user henry26 have been updated successfully."
+  "message" : "No new recommendations were found"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -23773,13 +23774,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 31211,
-  "message" : "Search returned 4 results",
-  "results" : [ "You Make Loving Fun", "You Make Loving Fun - 2004 Remastered Edition", "You Make Loving Fun (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "You Make Loving Fun" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "You Make Loving Fun - 2004 Remastered Edition", "You Make Loving Fun (Sessions, Roughs & Outtakes) - 2004 Remastered Edition", "You Make Loving Fun" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 31211,
-  "message" : "Successfully selected You Make Loving Fun."
+  "message" : "Successfully selected You Make Loving Fun - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "david27",
@@ -23789,8 +23790,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 31322,
-  "message" : "Search returned 5 results",
-  "results" : [ "World Turning - Live", "World Turning", "World Turning", "World Turning", "World Turning" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "World Turning - Live", "World Turning" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -23858,8 +23859,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 31580,
-  "message" : "Search returned 4 results",
-  "results" : [ "Sugar Daddy", "Sugar Daddy", "Sugar Daddy", "Sugar Daddy" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Sugar Daddy" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -24177,13 +24178,13 @@
       "Madonna" : 22,
       "Eminem" : 20,
       "Johnny Cash" : 20,
-      "ABBA" : 16
+      "Nothing But Thieves" : 16
     },
     "topGenres" : {
-      "pop" : 69,
+      "pop" : 68,
       "country" : 21,
       "rap" : 20,
-      "rock" : 15,
+      "rock" : 16,
       "soul" : 10
     },
     "topSongs" : {
@@ -24475,20 +24476,20 @@
     },
     "topGenres" : {
       "pop" : 48,
-      "justice for silver springs" : 33,
+      "justice for silver springs" : 40,
       "rock" : 21,
-      "classic rock" : 18,
-      "rap" : 15
+      "rap" : 15,
+      "alternative rock" : 11
     },
     "topSongs" : {
+      "Songbird - 2004 Remastered Edition" : 4,
       "Misty Mountain Hop" : 3,
-      "Songbird" : 3,
       "4 Minutes - feat. Justin Timberlake and Timbaland" : 2,
-      "Even Better Than the Real Thing" : 2,
-      "Everybody" : 2
+      "Dreams - 2004 Remastered Edition" : 2,
+      "Even Better Than the Real Thing" : 2
     },
     "topAlbums" : {
-      "Rumours (Super Deluxe)" : 33,
+      "Rumours (Super Deluxe)" : 40,
       "Celebration (Double Disc Version)" : 26,
       "Broken Machine (Deluxe)" : 11,
       "Electric Ladyland" : 10,
@@ -24617,8 +24618,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 35399,
-  "message" : "Search returned 5 results",
-  "results" : [ "World Turning - Live", "World Turning", "World Turning", "World Turning", "World Turning" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "World Turning - Live", "World Turning" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -24778,12 +24779,12 @@
   "user" : "jack29",
   "timestamp" : 36813,
   "message" : "Search returned 5 results",
-  "results" : [ "Gold Dust Woman", "Gold Dust Woman - 2004 Remastered Edition", "Gold Dust Woman", "Gold Dust Woman - Early Take", "Gold Dust Woman #1 (Sessions, Roughs & Outtakes)" ]
+  "results" : [ "Gold Dust Woman - 2004 Remastered Edition", "Gold Dust Woman", "Gold Dust Woman - Early Take", "Gold Dust Woman #1 (Sessions, Roughs & Outtakes)", "Gold Dust Woman (Early Demo) - 2004 Remastered Edition" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 36813,
-  "message" : "Successfully selected Gold Dust Woman."
+  "message" : "Successfully selected Gold Dust Woman - 2004 Remastered Edition."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -24795,18 +24796,18 @@
   "timestamp" : 36958,
   "result" : {
     "topAlbums" : {
-      "Rumours (Super Deluxe)" : 65,
+      "Rumours (Super Deluxe)" : 88,
       "Greatest Hits" : 36,
-      "Fleetwood Mac" : 7
+      "Fleetwood Mac" : 25
     },
     "topSongs" : {
+      "I'm So Afraid" : 7,
       "Shake Your Moneymaker" : 7,
-      "Monday Morning - Live" : 4,
-      "Need Your Love so Bad" : 4,
-      "Oh Well, Pt. 2" : 4,
-      "Rattlesnake Shake" : 4
+      "Songbird - 2004 Remastered Edition" : 7,
+      "Go Your Own Way - 2004 Remastered Edition" : 6,
+      "Never Going Back Again - 2004 Remastered Edition" : 6
     },
-    "topFans" : [ "grace25", "jack29", "irene33", "emily30", "alice22" ],
+    "topFans" : [ "grace25", "jack29", "irene33", "emily30", "henry26" ],
     "listeners" : 10
   }
 }, {
@@ -25003,18 +25004,7 @@
   "command" : "wrapped",
   "user" : "Rihanna",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "California King Bed" : 0,
-      "Cheers (Drink to That)" : 0,
-      "Complicated" : 0,
-      "Fading" : 0,
-      "Love the Way You Lie, Pt. II (feat. Eminem)" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist Rihanna."
 }, {
   "command" : "wrapped",
   "user" : "David Bowie",
@@ -25029,18 +25019,7 @@
   "command" : "wrapped",
   "user" : "Imagine Dragons",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "America" : 0,
-      "Amsterdam" : 0,
-      "Bleeding Out" : 0,
-      "Cha-Ching (Till We Grow Older)" : 0,
-      "Cover Up" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist Imagine Dragons."
 }, {
   "command" : "wrapped",
   "user" : "Whitney Houston",
@@ -25055,66 +25034,22 @@
   "command" : "wrapped",
   "user" : "Radiohead",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "15 Step" : 0,
-      "All I Need" : 0,
-      "Bodysnatchers" : 0,
-      "Faust Arp" : 0,
-      "House of Cards" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist Radiohead."
 }, {
   "command" : "wrapped",
   "user" : "Aretha Franklin",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "A Change Is Gonna Come" : 0,
-      "Baby, Baby, Baby" : 0,
-      "Do Right Woman, Do Right Man" : 0,
-      "Don't Let Me Lose This Dream" : 0,
-      "Dr. Feelgood" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist Aretha Franklin."
 }, {
   "command" : "wrapped",
   "user" : "The Beach Boys",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "Caroline No" : 0,
-      "Don't Talk (Put Your Head on My Shoulder)" : 0,
-      "God Only Knows" : 0,
-      "Here Today" : 0,
-      "I Just Wasn't Made for These Times" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist The Beach Boys."
 }, {
   "command" : "wrapped",
   "user" : "The Police",
   "timestamp" : 38196,
-  "result" : {
-    "topAlbums" : { },
-    "topSongs" : {
-      "Every Breath You Take" : 0,
-      "King of Pain" : 0,
-      "Miss Gradenko" : 0,
-      "O My God" : 0,
-      "Synchronicity I" : 0
-    },
-    "topFans" : [ ],
-    "listeners" : 0
-  }
+  "message" : "No data to show for artist The Police."
 }, {
   "command" : "wrapped",
   "user" : "jack29",
@@ -25129,8 +25064,8 @@
     },
     "topGenres" : {
       "country" : 93,
-      "rock" : 34,
-      "pop" : 30,
+      "rock" : 35,
+      "pop" : 29,
       "rap" : 21,
       "rock and roll" : 18
     },
@@ -25153,39 +25088,39 @@
 }, {
   "command" : "endProgram",
   "result" : {
-    "Nothing But Thieves" : {
+    "Fleetwood Mac" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 3208703.25,
+      "songRevenue" : 3983391.02,
       "ranking" : 1,
-      "mostProfitableSong" : "Afterlife"
+      "mostProfitableSong" : "Songbird - 2004 Remastered Edition"
     },
     "Eminem" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 3029367.54,
+      "songRevenue" : 3476401.7,
       "ranking" : 2,
       "mostProfitableSong" : "Under The Influence"
+    },
+    "Nothing But Thieves" : {
+      "merchRevenue" : 0.0,
+      "songRevenue" : 3208703.25,
+      "ranking" : 3,
+      "mostProfitableSong" : "Afterlife"
     },
     "Marvin Gaye" : {
       "merchRevenue" : 0.0,
       "songRevenue" : 3000746.6,
-      "ranking" : 3,
-      "mostProfitableSong" : "Joy"
-    },
-    "Fleetwood Mac" : {
-      "merchRevenue" : 0.0,
-      "songRevenue" : 2808706.14,
       "ranking" : 4,
-      "mostProfitableSong" : "Love That Burns"
+      "mostProfitableSong" : "Joy"
     },
     "U2" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 2705869.72,
+      "songRevenue" : 2712691.7,
       "ranking" : 5,
       "mostProfitableSong" : "Running to Stand Still"
     },
     "Jimi Hendrix" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 2316829.37,
+      "songRevenue" : 2316688.68,
       "ranking" : 6,
       "mostProfitableSong" : "Can You See Me"
     },
@@ -25195,41 +25130,41 @@
       "ranking" : 7,
       "mostProfitableSong" : "I'm A Drifter - Version 1"
     },
-    "Led Zeppelin" : {
-      "merchRevenue" : 0.0,
-      "songRevenue" : 1957187.97,
-      "ranking" : 8,
-      "mostProfitableSong" : "Misty Mountain Hop"
-    },
     "Taylor Swift" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 1666569.87,
-      "ranking" : 9,
+      "songRevenue" : 2027505.17,
+      "ranking" : 8,
       "mostProfitableSong" : "Delicate 易碎"
     },
     "Michael Jackson" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 1267081.31,
+      "songRevenue" : 2011423.09,
+      "ranking" : 9,
+      "mostProfitableSong" : "Jam"
+    },
+    "Led Zeppelin" : {
+      "merchRevenue" : 0.0,
+      "songRevenue" : 1957187.97,
       "ranking" : 10,
-      "mostProfitableSong" : "Off the Wall"
+      "mostProfitableSong" : "Misty Mountain Hop"
+    },
+    "ABBA" : {
+      "merchRevenue" : 1500.0,
+      "songRevenue" : 1516373.75,
+      "ranking" : 11,
+      "mostProfitableSong" : "Why Did It Have to Be Me"
     },
     "Madonna" : {
       "merchRevenue" : 0.0,
-      "songRevenue" : 879175.72,
-      "ranking" : 11,
+      "songRevenue" : 926175.76,
+      "ranking" : 12,
       "mostProfitableSong" : "Frozen"
     },
     "Chuck Berry" : {
       "merchRevenue" : 0.0,
       "songRevenue" : 621871.54,
-      "ranking" : 12,
-      "mostProfitableSong" : "Reelin' And Rockin' - Single Version"
-    },
-    "ABBA" : {
-      "merchRevenue" : 1500.0,
-      "songRevenue" : 227465.91,
       "ranking" : 13,
-      "mostProfitableSong" : "Dancing Queen"
+      "mostProfitableSong" : "Reelin' And Rockin' - Single Version"
     },
     "Imagine Dragons" : {
       "merchRevenue" : 7700.0,

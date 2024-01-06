@@ -71,10 +71,9 @@ public final class Podcast extends PlayableEntity {
 
     @Override
     public void acceptListen(Player player) {
-        System.out.println("HERE");
         String username = player.getUsername();
-        HashMap<String, Integer> listeners = episodes.get(player.getPosition().getTrack()).getListeners();
-        System.out.println("User " + username + " watches episode " + episodes.get(player.getPosition().getTrack()).getName());
+        HashMap<String, Integer> listeners = episodes.get(player.getPosition().getTrack())
+                                                    .getListeners();
         listeners.put(username, listeners.getOrDefault(username, 0) + 1);
         player.listen(this);
     }

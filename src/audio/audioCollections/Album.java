@@ -2,11 +2,8 @@ package audio.audioCollections;
 
 import audio.audioFiles.Song;
 import lombok.Getter;
-import user.normalUser.player.Listenable;
-import user.normalUser.player.Player;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 @Getter
 public final class Album extends SongsCollection {

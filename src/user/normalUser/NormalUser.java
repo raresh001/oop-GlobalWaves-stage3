@@ -11,7 +11,7 @@ import lombok.Setter;
 import user.User;
 import user.normalUser.page.HomePage;
 import user.normalUser.page.Page;
-import user.normalUser.player.PageHistory;
+import user.normalUser.page.PageHistory;
 import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 import user.normalUser.search.bar.SearchBar;
@@ -102,10 +102,10 @@ public final class NormalUser extends User implements Observer {
     public void cancelPremium() {
         player.cancelPremium();
 
-        System.out.println("AICI E PREMIUM");
+        // System.out.println("AICI E PREMIUM");
         for (Map.Entry<Song, Integer> entry : player.getWatchedSongsPremium().entrySet()) {
 
-            System.out.println("DAM " + PREMIUM_USER_CREDIT * entry.getValue() / player.getTotalNoWatchedSongsPremium() + " CATRE " + entry.getKey().getName() + " -- " + entry.getKey().getArtist());
+            // System.out.println("DAM " + PREMIUM_USER_CREDIT * entry.getValue() / player.getTotalNoWatchedSongsPremium() + " CATRE " + entry.getKey().getName() + " -- " + entry.getKey().getArtist());
             entry.getKey().addRevenue(PREMIUM_USER_CREDIT
                                             * entry.getValue()
                                             / player.getTotalNoWatchedSongsPremium());
@@ -116,7 +116,7 @@ public final class NormalUser extends User implements Observer {
     }
 
     public void changePage(final Page page1) {
+        pageHistory.changePage(page);
         page = page1;
-        pageHistory.changePage(page1);
     }
 }

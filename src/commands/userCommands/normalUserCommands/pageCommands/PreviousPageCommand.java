@@ -4,7 +4,11 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
+import user.normalUser.page.ArtistPage;
+import user.normalUser.page.LikedContentPage;
 import user.normalUser.page.Page;
+
+import java.util.LinkedList;
 
 public final class PreviousPageCommand extends NormalUserCommand {
     public PreviousPageCommand(CommandInput commandInput) {
@@ -18,7 +22,7 @@ public final class PreviousPageCommand extends NormalUserCommand {
             return;
         }
 
-        Page previousPage = normalUser.getPageHistory().undo();
+        Page previousPage = normalUser.getPageHistory().undo(normalUser.getPage());
         if (previousPage == null) {
             objectNode.put("message", "There are no pages left to go back.");
         } else {

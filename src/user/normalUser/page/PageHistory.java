@@ -1,4 +1,4 @@
-package user.normalUser.player;
+package user.normalUser.page;
 
 import user.normalUser.page.Page;
 import java.util.LinkedList;
@@ -12,23 +12,23 @@ public final class PageHistory {
         undo.push(page);
     }
 
-    public Page undo() {
+    public Page undo(final Page previous) {
         if (undo.isEmpty()) {
             return null;
         }
 
         Page page = undo.pop();
-        redo.push(page);
+        redo.push(previous);
         return page;
     }
 
-    public Page redo() {
+    public Page redo(final Page previous) {
         if (redo.isEmpty()) {
             return null;
         }
 
         Page page = redo.pop();
-        undo.push(page);
+        undo.push(previous);
         return page;
     }
 }

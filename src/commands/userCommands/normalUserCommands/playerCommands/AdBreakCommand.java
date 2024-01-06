@@ -5,9 +5,9 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class AddBreakCommand extends NormalUserCommand {
+public class AdBreakCommand extends NormalUserCommand {
     private final double price;
-    public AddBreakCommand(CommandInput commandInput) {
+    public AdBreakCommand(CommandInput commandInput) {
         super(commandInput);
         price = commandInput.getPrice();
     }

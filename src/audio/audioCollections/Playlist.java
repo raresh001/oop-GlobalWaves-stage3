@@ -1,8 +1,10 @@
 package audio.audioCollections;
 
+import audio.audioFiles.Song;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Getter;
 import user.normalUser.NormalUser;
+import user.normalUser.player.PlayableEntity;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -56,5 +58,21 @@ public final class Playlist extends SongsCollection {
 
     public int getNoFollowers() {
         return followingUsers.size();
+    }
+
+    public boolean equals(PlayableEntity playableEntity) {
+        if (playableEntity == null) {
+            return false;
+        }
+
+        if (playableEntity.getType() != AudioType.PLAYLIST) {
+            return false;
+        }
+
+        if (!playableEntity.getName().equals(playableEntity.getName())) {
+            return false;
+        }
+
+        return true;
     }
 }

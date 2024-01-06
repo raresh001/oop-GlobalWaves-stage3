@@ -47,7 +47,7 @@ public final class SearchCommand extends NormalUserCommand {
         Player player = normalUser.getPlayer(timestamp);
         player.retainPreviousPosition();
         player.reset();
-        player.setAddPrice(-1);
+        player.setAdPrice(-1);
 
         // effectuate the search
         SearchBar searchBar = normalUser.getSearchBar();

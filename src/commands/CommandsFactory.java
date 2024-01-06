@@ -80,7 +80,7 @@ public final class CommandsFactory {
             case "subscribe" -> new SubscribeCommand(commandInput);
             case "getNotifications" -> new GetNotificationsCommand(commandInput);
             case "wrapped" -> new WrappedCommand(commandInput);
-            case "adBreak" -> new AddBreakCommand(commandInput);
+            case "adBreak" -> new AdBreakCommand(commandInput);
             case "nextPage" -> new NextPageCommand(commandInput);
             case "previousPage" -> new PreviousPageCommand(commandInput);
             case "updateRecommendations" -> new UpdateRecommendationsCommand(commandInput);

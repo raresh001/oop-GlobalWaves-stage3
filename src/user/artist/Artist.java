@@ -14,11 +14,11 @@ import user.normalUser.Notification;
 import user.normalUser.Subject;
 import user.normalUser.search.bar.SearchableEntity;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 @Getter
 public final class Artist extends User implements SearchableEntity {
+    private final ArrayList<Album> removedAlbums = new ArrayList<>();
     private final List<Album> albums = new LinkedList<>();
     private final LinkedList<Event> events = new LinkedList<>();
     private final LinkedList<Merch> merchList = new LinkedList<>();
@@ -33,6 +33,12 @@ public final class Artist extends User implements SearchableEntity {
 
     public double getTotalSongRevenue() {
         double totalRevenue = 0;
+        for (Album album : removedAlbums) {
+            for (Song song : album.getSongs()) {
+                totalRevenue += song.getRevenues();
+            }
+        }
+
         for (Album album : albums) {
             for (Song song : album.getSongs()) {
                 totalRevenue += song.getRevenues();
@@ -114,21 +120,43 @@ public final class Artist extends User implements SearchableEntity {
         return true;
     }
 
-    private String getMostProfitableSong() {
-        Song best = albums.get(0).getSongs().get(0);
+    private HashMap<String, Double> getSongPrices() {
+        HashMap<String, Double> songPrices = new HashMap<>();
 
-        for (Album album : albums) {
+        for (Album album : removedAlbums) {
             for (Song song : album.getSongs()) {
-                if (best.getRevenues() < song.getRevenues()) {
-                    best = song;
-                } else if (best.getRevenues() == song.getRevenues()
-                        && best.getName().compareTo(song.getName()) > 0) {
-                    best = song;
-                }
+                songPrices.put(song.getName(),
+                        songPrices.getOrDefault(song.getName(), 0.0) + song.getRevenues());
             }
         }
 
-        return best.getName();
+        for (Album album : albums) {
+            for (Song song : album.getSongs()) {
+                songPrices.put(song.getName(),
+                        songPrices.getOrDefault(song.getName(), 0.0) + song.getRevenues());
+            }
+        }
+
+        return songPrices;
+    }
+
+    private String getMostProfitableSong() {
+        HashMap<String, Double> songPrices = getSongPrices();
+
+        String best = null;
+        double bestPrice = -1;
+
+        for (Map.Entry<String, Double> entry : songPrices.entrySet()) {
+            if (entry.getValue() > bestPrice) {
+                best = entry.getKey();
+                bestPrice = entry.getValue();
+            } else if (bestPrice == entry.getValue() && best.compareTo(entry.getKey()) > 0) {
+                best = entry.getKey();
+                bestPrice = entry.getValue();
+            }
+        }
+
+        return best;
     }
 
     public ObjectNode showStatistics(int indexInArray) {

@@ -137,7 +137,7 @@ public final class NextCommand extends NormalUserCommand {
         switch (player.getPlayingAudioFile().getType()) {
             case SONG:
                 if (player.getPlayingAudioFile().getName().equals("adBreak")) {
-                    objectNode.put("message", "Cannot skip add");
+                    objectNode.put("message", "Cannot skip ad.");
                     output.add(objectNode);
                     return;
                 }
