@@ -14,21 +14,29 @@ import user.artist.Artist;
 import user.host.Host;
 import user.normalUser.NormalUser;
 
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.ArrayList;
 
 record SortCell(String name, int value) implements Comparable<SortCell> {
     @Override
-    public int compareTo(SortCell o) {
+    public int compareTo(final SortCell o) {
         return o.value == value() ? name.compareTo(o.name) : o.value - value;
     }
 
-    public static ArrayList<SortCell> getTopList(HashMap<String, Integer> map) {
+    /**
+     * @param map - a map containing pairs (names - number of listens)
+     * @return - an array of these pairs sorted by number of listens (alphabetical order
+     * if the values are equal)
+     */
+    public static ArrayList<SortCell> getTopList(final HashMap<String, Integer> map) {
         ArrayList<SortCell> top = new ArrayList<>();
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             top.add(new SortCell(entry.getKey(), entry.getValue()));
         }
 
-        top.sort((o1, o2) -> o1.value == o2.value() ? o1.name.compareTo(o2.name) : o2.value - o1.value);
+        top.sort((o1, o2) -> o1.value == o2.value()
+                        ? o1.name.compareTo(o2.name) : o2.value - o1.value);
         return top;
     }
 }
@@ -36,7 +44,7 @@ record SortCell(String name, int value) implements Comparable<SortCell> {
 public final class WrappedCommand extends UserCommand {
     private static final int STATISTICS_MAX_LEN = 5;
 
-    public enum wrapResult {
+    public enum WrapResult {
         VALID_OUTPUT,
         INVALID_USER,
         INVALID_ARTIST,
@@ -47,7 +55,8 @@ public final class WrappedCommand extends UserCommand {
         super(commandInput);
     }
 
-    private ObjectNode getTopArrayNode(ArrayList<SortCell> list) {
+    /* Create an object node that contains information about the list */
+    private ObjectNode getTopArrayNode(final ArrayList<SortCell> list) {
         int max = 0;
         list.sort(null);
         ObjectNode top = (new ObjectMapper()).createObjectNode();
@@ -62,12 +71,14 @@ public final class WrappedCommand extends UserCommand {
         return top;
     }
 
-    private ObjectNode getTopArrayNode(HashMap<String, Integer> map) {
+    /* Create an object node that contains information about the map */
+    private ObjectNode getTopArrayNode(final HashMap<String, Integer> map) {
+        final int maxSize = 5;
         int max = 0;
         ObjectNode top = (new ObjectMapper()).createObjectNode();
         for (SortCell sortCell : SortCell.getTopList(map)) {
             top.put(sortCell.name(), sortCell.value());
-            if (++max == 5) {
+            if (++max == maxSize) {
                 break;
             }
         }
@@ -75,12 +86,14 @@ public final class WrappedCommand extends UserCommand {
         return top;
     }
 
-    private ArrayNode getTopArrayWithoutValue(HashMap<String, Integer> map) {
+    /* Create an object node that contains information about the orders names from map */
+    private ArrayNode getTopArrayWithoutValue(final HashMap<String, Integer> map) {
+        final int maxSize = 5;
         int max = 0;
         ArrayNode top = (new ObjectMapper()).createArrayNode();
         for (SortCell sortCell : SortCell.getTopList(map)) {
             top.add(sortCell.name());
-            if (++max == 5) {
+            if (++max == maxSize) {
                 break;
             }
         }
@@ -88,19 +101,26 @@ public final class WrappedCommand extends UserCommand {
         return top;
     }
 
-    public wrapResult wrap(NormalUser normalUser, ObjectNode objectNode) {
+    /**
+     * Wrap a normal user
+     * @param normalUser - the user that is wrapped
+     * @param objectNode - contains the result of the statistics
+     * @return - the success rate of this command
+     */
+    public WrapResult wrap(final NormalUser normalUser, final ObjectNode objectNode) {
         if (normalUser.getPlayer().getListenedSongs().isEmpty()
                 && normalUser.getPlayer().getListenedEpisodes().isEmpty()) {
-            return wrapResult.INVALID_USER;
+            return WrapResult.INVALID_USER;
         }
 
         objectNode.set("topArtists", getTopArrayNode(normalUser.getPlayer().getListenedArtists()));
         objectNode.set("topGenres", getTopArrayNode(normalUser.getPlayer().getListenedGenres()));
         objectNode.set("topSongs", getTopArrayNode(normalUser.getPlayer().getListenedSongs()));
         objectNode.set("topAlbums", getTopArrayNode(normalUser.getPlayer().getListenedAlbums()));
-        objectNode.set("topEpisodes", getTopArrayNode(normalUser.getPlayer().getListenedEpisodes()));
+        objectNode.set("topEpisodes",
+                    getTopArrayNode(normalUser.getPlayer().getListenedEpisodes()));
 
-        return wrapResult.VALID_OUTPUT;
+        return WrapResult.VALID_OUTPUT;
     }
 
     private static void wrapAlbum(final Album album,
@@ -132,7 +152,13 @@ public final class WrappedCommand extends UserCommand {
         }
     }
 
-    public wrapResult wrap(Artist artist, ObjectNode objectNode) {
+    /**
+     * Wrap an artist
+     * @param artist - the user that is wrapped
+     * @param objectNode - contains the result of the statistics
+     * @return - the success rate of this command
+     */
+    public WrapResult wrap(final Artist artist, final ObjectNode objectNode) {
         HashMap<String, Integer> topAlbums = new HashMap<>();
         HashMap<String, Integer> topSongs = new HashMap<>();
 
@@ -147,7 +173,7 @@ public final class WrappedCommand extends UserCommand {
         }
 
         if (topSongs.isEmpty()) {
-            return wrapResult.INVALID_ARTIST;
+            return WrapResult.INVALID_ARTIST;
         }
 
         objectNode.set("topAlbums", getTopArrayNode(topAlbums));
@@ -155,10 +181,16 @@ public final class WrappedCommand extends UserCommand {
         objectNode.set("topFans", getTopArrayWithoutValue(listenersMap));
         objectNode.put("listeners", listenersMap.size());
 
-        return wrapResult.VALID_OUTPUT;
+        return WrapResult.VALID_OUTPUT;
     }
 
-    public wrapResult wrap(Host host, ObjectNode objectNode) {
+    /**
+     * Wrap a host
+     * @param host - the user that is wrapped
+     * @param objectNode - contains the result of the statistics
+     * @return - the success rate of this command
+     */
+    public WrapResult wrap(final Host host, final ObjectNode objectNode) {
         HashMap<String, Integer> listenersMap = new HashMap<>();
         ArrayList<SortCell> topEpisodes = new ArrayList<>();
 
@@ -176,17 +208,23 @@ public final class WrappedCommand extends UserCommand {
         }
 
         if (topEpisodes.isEmpty()) {
-            return wrapResult.INVALID_HOST;
+            return WrapResult.INVALID_HOST;
         }
 
         objectNode.set("topEpisodes", getTopArrayNode(topEpisodes));
         objectNode.put("listeners", listenersMap.size());
-        return wrapResult.VALID_OUTPUT;
+        return WrapResult.VALID_OUTPUT;
     }
 
+    /**
+     * Execute wrapped command
+     * @param output - the ArrayNode containing command's result
+     */
     @Override
-    public void executeCommand(ArrayNode output) {
-        ObjectNode objectNode = createTemplateCommandResult("wrapped", username, timestamp);
+    public void executeCommand(final ArrayNode output) {
+        ObjectNode objectNode = createTemplateCommandResult("wrapped",
+                                                            username,
+                                                            timestamp);
 
         User user = Admin.getUserByName(username);
         if (user == null) {
@@ -202,13 +240,16 @@ public final class WrappedCommand extends UserCommand {
                     objectNode.set("result", resultNode);
                     break;
                 case INVALID_USER:
-                    objectNode.put("message", "No data to show for user " + username + ".");
+                    objectNode.put("message",
+                                "No data to show for user " + username + ".");
                     break;
                 case INVALID_ARTIST:
-                    objectNode.put("message", "No data to show for artist " + username + ".");
+                    objectNode.put("message",
+                                "No data to show for artist " + username + ".");
                     break;
                 default:
-                    objectNode.put("message", "No data to show for host " + username + ".");
+                    objectNode.put("message",
+                                "No data to show for host " + username + ".");
             }
         }
 

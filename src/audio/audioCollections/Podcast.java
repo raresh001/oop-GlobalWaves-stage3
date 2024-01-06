@@ -60,17 +60,17 @@ public final class Podcast extends PlayableEntity {
     }
 
     @Override
-    public int getCurrentTrackDuration(int track) {
+    public int getCurrentTrackDuration(final int track) {
         return episodes.get(track).getDuration();
     }
 
     @Override
-    public boolean acceptGetNextTrack(Player player) {
+    public boolean acceptGetNextTrack(final Player player) {
         return player.getNextTrackPodcast();
     }
 
     @Override
-    public void acceptListen(Player player) {
+    public void acceptListen(final Player player) {
         String username = player.getUsername();
         HashMap<String, Integer> listeners = episodes.get(player.getPosition().getTrack())
                                                     .getListeners();

@@ -11,7 +11,6 @@ import user.normalUser.player.Player;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 @Getter
 public final class Song extends PlayableEntity {
@@ -28,10 +27,6 @@ public final class Song extends PlayableEntity {
     private final ArrayList<NormalUser> likes = new ArrayList<>();
     private final ArrayList<Playlist> playlistList = new ArrayList<>();
     private final HashMap<String, Integer> listeners = new HashMap<>();
-
-    public HashMap<String, Integer> getListeners() {
-        return listeners;
-    }
 
     public Song(final SongInput songInput) {
         super(songInput.getName());
@@ -60,12 +55,12 @@ public final class Song extends PlayableEntity {
     }
 
     @Override
-    public int getCurrentTrackDuration(int track) {
+    public int getCurrentTrackDuration(final int track) {
         return duration;
     }
 
     @Override
-    public boolean acceptGetNextTrack(Player player) {
+    public boolean acceptGetNextTrack(final Player player) {
         return player.getNextTrackSong();
     }
 
@@ -90,14 +85,17 @@ public final class Song extends PlayableEntity {
     }
 
     @Override
-    public void acceptListen(Player player) {
+    public void acceptListen(final Player player) {
         String username = player.getUsername();
         listeners.put(username, listeners.getOrDefault(username, 0) + 1);
 
         player.listen(this);
     }
 
-    public void addRevenue(double price) {
+    /**
+     * @param price - the price that is added to the total revenues of this song
+     */
+    public void addRevenue(final double price) {
         revenues += price;
     }
 

@@ -1,6 +1,7 @@
-package user.normalUser.search.bar;
+package user.normalUser.search.bar.filters;
 
 import commands.userCommands.normalUserCommands.searchCommands.SearchCommand;
+import user.normalUser.search.bar.InvalidSearchedEntityException;
 
 public final class FilterFactory {
     private FilterFactory() {
@@ -11,7 +12,8 @@ public final class FilterFactory {
      * @return - an instance of a class that implements SearchFilter
      *      according to the search command filter requirements
      */
-    public static SearchFilter createInstance(final SearchCommand searchCommand) {
+    public static SearchFilter createInstance(final SearchCommand searchCommand)
+        throws InvalidSearchedEntityException {
         if (searchCommand.getType().equals("song")) {
             return new SongFilter(searchCommand.getFiltersInput());
         }
@@ -36,6 +38,6 @@ public final class FilterFactory {
             return new HostFilter(searchCommand.getFiltersInput());
         }
 
-        throw new InvalidSearchedEntityError();
+        throw new InvalidSearchedEntityException();
     }
 }

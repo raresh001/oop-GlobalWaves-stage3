@@ -8,8 +8,10 @@ import audio.audioFiles.Song;
 import lombok.Getter;
 import lombok.Setter;
 
-
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
 
 @Getter
 public final class Player {
@@ -70,8 +72,11 @@ public final class Player {
         return shuffle != null;
     }
 
-    public void listen(Song song) {
-        // System.out.println("Accept listen for " + song.getName());
+    /**
+     * Mark current song as listened
+     * @param song - the song from the track
+     */
+    public void listen(final Song song) {
         if (isPremium) {
             watchedSongsPremium.put(song, watchedSongsPremium.getOrDefault(song, 0) + 1);
             totalNoWatchedSongsPremium++;
@@ -80,15 +85,24 @@ public final class Player {
             totalNoWatchedSongsNormal++;
         }
 
-        listenedSongs.put(song.getName(), listenedSongs.getOrDefault(song.getName(), 0) + 1);
-        listenedAlbums.put(song.getAlbum(), listenedAlbums.getOrDefault(song.getAlbum(), 0) + 1);
-        listenedGenres.put(song.getGenre(), listenedGenres.getOrDefault(song.getGenre(), 0) + 1);
-        listenedArtists.put(song.getArtist(), listenedArtists.getOrDefault(song.getArtist(), 0) + 1);
+        listenedSongs.put(song.getName(),
+                            listenedSongs.getOrDefault(song.getName(), 0) + 1);
+        listenedAlbums.put(song.getAlbum(),
+                            listenedAlbums.getOrDefault(song.getAlbum(), 0) + 1);
+        listenedGenres.put(song.getGenre(),
+                            listenedGenres.getOrDefault(song.getGenre(), 0) + 1);
+        listenedArtists.put(song.getArtist(),
+                            listenedArtists.getOrDefault(song.getArtist(), 0) + 1);
     }
 
-    public void listen(Podcast podcast) {
+    /**
+     * Mark current episode as listened
+     * @param podcast - the podcast from the player
+     */
+    public void listen(final Podcast podcast) {
         Episode episode = podcast.getEpisodes().get(position.getTrack());
-        listenedEpisodes.put(episode.getName(), listenedEpisodes.getOrDefault(episode.getName(), 0) + 1);
+        listenedEpisodes.put(episode.getName(),
+                            listenedEpisodes.getOrDefault(episode.getName(), 0) + 1);
     }
 
     /**
@@ -107,6 +121,10 @@ public final class Player {
         isPlaying = false;
     }
 
+    /**
+     * get the next track, assuming that a song is played
+     * @return - a boolean indicating if the player was reset
+     */
     public boolean getNextTrackSong() {
         switch (repeat) {
             case 0:
@@ -121,6 +139,10 @@ public final class Player {
         }
     }
 
+    /**
+     * get the next track, assuming that a podcast is played
+     * @return - a boolean indicating if the player was reset
+     */
     public boolean getNextTrackPodcast() {
         int track = position.getTrack();
         Podcast podcast = (Podcast) playingAudioFile;
@@ -142,6 +164,10 @@ public final class Player {
         return true;
     }
 
+    /**
+     * get the next track, assuming that a song collection is played
+     * @return - a boolean indicating if the player was reset
+     */
     public boolean getNextTrackSongsCollection() {
         if (repeat == 2) {
             // repeat current song
@@ -181,8 +207,8 @@ public final class Player {
         return true;
     }
 
-    public void playAd(final int timestamp1) {
-        System.out.println("Am intrat aici " + adPrice);
+    /* change the playing file to an ad */
+    private void playAd(final int timestamp1) {
         int posInTrack = position.getPositionInTrack();
 
         int duration = playingAudioFile.getCurrentTrackDuration(position.getTrack());
@@ -196,15 +222,11 @@ public final class Player {
         position = new Position(0, 0);
         playingAudioFile = Admin.getAdd();
 
-        System.out.println("Am iesit de aici " + adPrice);
-
         updatePosition(timestamp1);
     }
 
+    /* change the playing file to the previous track */
     private void playBackNormal(final int timestamp1) {
-        calculateCreditAd();
-
-        adPrice = -1;
         timestamp += (playingAudioFile.getCurrentTrackDuration(0) - position.getPositionInTrack());
 
         playingAudioFile = prevPlayingFile;
@@ -219,16 +241,28 @@ public final class Player {
         }
     }
 
+    /**
+     * update current position
+     * @param timestamp1 - the current moment of time
+     */
     public void updatePosition(final int timestamp1) {
+        if (timestamp1 == timestamp) {
+            return;
+        }
+
         if (playingAudioFile == null || (!playingAudioFile.isAd() && !isPlaying)) {
             timestamp = timestamp1;
             return;
         }
 
+        // timestampDiff represents the time passed from the beginning of the current track
         int timestampDiff = timestamp1 - timestamp + position.getPositionInTrack();
 
         if (playingAudioFile.isAd()) {
-            System.out.println("AICI: " + adPrice);
+            if (adPrice != -1) {
+                calculateCreditAd();
+                adPrice = -1;
+            }
             if (timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
                 playBackNormal(timestamp1);
                 return;
@@ -238,8 +272,9 @@ public final class Player {
             return;
         }
 
-        if (adPrice != -1 && !isPremium &&
-                timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
+        if (adPrice != -1
+                && !isPremium
+                && timestampDiff >= playingAudioFile.getCurrentTrackDuration(position.getTrack())) {
             playAd(timestamp1);
             return;
         }
@@ -331,23 +366,29 @@ public final class Player {
         return !isPlaying;
     }
 
-    public void addBreak(double price) {
+    /**
+     * add a break to the player
+     * @param price - the price of the ad break
+     */
+    public void adBreak(final double price) {
         adPrice = price;
-        // System.out.println("Schimb la " + price);
     }
 
+    /**
+     * add the credit to all watched songs for non-premium users
+     */
     public void calculateCreditAd() {
-        // System.out.println("AICI E STANDARTD");
         for (Map.Entry<Song, Integer> entry : watchedSongsNormal.entrySet()) {
-            // System.out.println("DAM " + addPrice * entry.getValue() / totalNoWatchedSongsNormal + " pt " + entry.getKey().getName() + " -- " +  entry.getKey().getArtist());
             entry.getKey().addRevenue(adPrice * entry.getValue() / totalNoWatchedSongsNormal);
         }
 
-        // System.out.println("GATA CU DATUL\n");
         totalNoWatchedSongsNormal = 0;
         watchedSongsNormal = new HashMap<>();
     }
 
+    /**
+     * cancel the premium state of the player, and removes the ad if it was playing right now
+     */
     public void cancelPremium() {
         isPremium = false;
 

@@ -1,12 +1,10 @@
-package user.normalUser.search.bar;
+package user.normalUser.search.bar.filters;
 
 import admin.Admin;
-import audio.audioCollections.Album;
 import audio.audioFiles.Song;
 import fileio.input.FiltersInput;
-import org.checkerframework.checker.units.qual.A;
-import user.artist.Artist;
 import user.normalUser.NormalUser;
+import user.normalUser.search.bar.SearchableEntity;
 
 import java.util.ArrayList;
 

@@ -7,13 +7,13 @@ import fileio.input.CommandInput;
 import user.normalUser.player.Player;
 import user.normalUser.player.Position;
 
-public class LoadRecommendationsCommand extends NormalUserCommand {
-    public LoadRecommendationsCommand(CommandInput commandInput) {
+public final class LoadRecommendationsCommand extends NormalUserCommand {
+    public LoadRecommendationsCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("loadRecommendations",
                                                                     output);
         if (objectNode == null) {

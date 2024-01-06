@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
-import user.artist.Artist;
 import user.host.Host;
 import user.normalUser.page.ArtistPage;
 import user.normalUser.page.HomePage;
@@ -23,6 +22,7 @@ public final class ChangePageCommand extends NormalUserCommand {
         nextPage = commandInput.getNextPage();
     }
 
+    /* Get the page of the currently watched host */
     private HostPage getHostPage() {
         PlayableEntity playableEntity = normalUser.getPlayer().getPlayingAudioFile();
         if (playableEntity == null
@@ -38,6 +38,7 @@ public final class ChangePageCommand extends NormalUserCommand {
         return new HostPage(host);
     }
 
+    /* Get the page of the currently watched artist */
     private ArtistPage getArtistPage() {
         PlayableEntity playableEntity = normalUser.getPlayer().getPlayingAudioFile();
         if (playableEntity == null

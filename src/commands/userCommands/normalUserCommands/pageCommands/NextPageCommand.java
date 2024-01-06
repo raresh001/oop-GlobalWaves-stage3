@@ -6,13 +6,13 @@ import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 import user.normalUser.page.Page;
 
-public class NextPageCommand extends NormalUserCommand {
-    public NextPageCommand(CommandInput commandInput) {
+public final class NextPageCommand extends NormalUserCommand {
+    public NextPageCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("nextPage", output);
         if (objectNode == null) {
             return;

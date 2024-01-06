@@ -5,15 +5,15 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class BuyMerchCommand extends NormalUserCommand {
+public final class BuyMerchCommand extends NormalUserCommand {
     private final String name;
-    public BuyMerchCommand(CommandInput commandInput) {
+    public BuyMerchCommand(final CommandInput commandInput) {
         super(commandInput);
         name = commandInput.getName();
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("buyMerch", output);
         if (objectNode == null) {
             return;

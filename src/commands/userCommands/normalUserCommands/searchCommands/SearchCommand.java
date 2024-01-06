@@ -8,9 +8,10 @@ import fileio.input.CommandInput;
 import fileio.input.FiltersInput;
 import lombok.Getter;
 import user.normalUser.player.Player;
-import user.normalUser.search.bar.FilterFactory;
+import user.normalUser.search.bar.InvalidSearchedEntityException;
+import user.normalUser.search.bar.filters.FilterFactory;
 import user.normalUser.search.bar.SearchBar;
-import user.normalUser.search.bar.SearchFilter;
+import user.normalUser.search.bar.filters.SearchFilter;
 import user.normalUser.search.bar.SearchableEntity;
 
 @Getter
@@ -51,7 +52,15 @@ public final class SearchCommand extends NormalUserCommand {
 
         // effectuate the search
         SearchBar searchBar = normalUser.getSearchBar();
-        SearchFilter searchFilter = FilterFactory.createInstance(this);
+        SearchFilter searchFilter;
+
+        try {
+            searchFilter = FilterFactory.createInstance(this);
+        } catch (InvalidSearchedEntityException e) {
+            objectNode.put("message", "Invalid search type.");
+            output.add(objectNode);
+            return;
+        }
 
         searchBar.reset();
         searchBar.setSearchedEntities(searchFilter.filter(normalUser));

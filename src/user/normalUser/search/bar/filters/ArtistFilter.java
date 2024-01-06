@@ -1,28 +1,29 @@
-package user.normalUser.search.bar;
+package user.normalUser.search.bar.filters;
 
 import admin.Admin;
 import fileio.input.FiltersInput;
-import user.host.Host;
+import user.artist.Artist;
 import user.normalUser.NormalUser;
+import user.normalUser.search.bar.SearchableEntity;
 
 import java.util.ArrayList;
 
-public final class HostFilter implements SearchFilter {
+public final class ArtistFilter implements SearchFilter {
     private final String name;
 
-    HostFilter(final FiltersInput filtersInput) {
+    ArtistFilter(final FiltersInput filtersInput) {
         name = filtersInput.getName();
     }
 
-    private boolean respectsTheFilter(final Host host) {
-        return host.getName().startsWith(name);
+    private boolean respectsTheFilter(final Artist artist) {
+        return artist.getName().startsWith(name);
     }
     @Override
     public ArrayList<SearchableEntity> filter(final NormalUser normalUser) {
         ArrayList<SearchableEntity> filteredList = new ArrayList<>();
-        for (Host host : Admin.getHosts()) {
-            if (respectsTheFilter(host)) {
-                filteredList.add(host);
+        for (Artist artist : Admin.getArtists()) {
+            if (respectsTheFilter(artist)) {
+                filteredList.add(artist);
                 if (filteredList.size() == MAX_FILTERED_LIST_SIZE) {
                     break;
                 }

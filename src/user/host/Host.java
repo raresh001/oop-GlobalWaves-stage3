@@ -55,11 +55,16 @@ public final class Host extends User implements SearchableEntity {
     }
 
     @Override
-    public WrappedCommand.wrapResult acceptWrap(final WrappedCommand wrappedCommand, final ObjectNode objectNode) {
+    public WrappedCommand.WrapResult acceptWrap(final WrappedCommand wrappedCommand,
+                                                final ObjectNode objectNode) {
         return wrappedCommand.wrap(this, objectNode);
     }
 
-    public void notifySubscribers(Notification notification) {
+    /**
+     * notify all observers
+     * @param notification - the notification that needs to be sent to all observers
+     */
+    public void notifySubscribers(final Notification notification) {
         subject.notify(notification);
     }
 }

@@ -5,13 +5,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class SubscribeCommand extends NormalUserCommand {
-    public SubscribeCommand(CommandInput commandInput) {
+public final class SubscribeCommand extends NormalUserCommand {
+    public SubscribeCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("subscribe", output);
         if (objectNode == null) {
             return;

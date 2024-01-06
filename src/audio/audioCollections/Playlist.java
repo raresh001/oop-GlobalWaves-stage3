@@ -1,11 +1,10 @@
 package audio.audioCollections;
 
-import audio.audioFiles.Song;
+import admin.Admin;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Getter;
 import user.normalUser.NormalUser;
-import user.normalUser.player.PlayableEntity;
-
+import user.normalUser.Notification;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -53,26 +52,18 @@ public final class Playlist extends SongsCollection {
             normalUser1.getFollowedPlaylists().add(this);
             followingUsers.add(normalUser1);
             objectNode.put("message", "Playlist followed successfully.");
+            Admin.getNormalUserByName(getOwner())
+                    .getNotifications()
+                    .add(new Notification("Playlist followed",
+                                                "Playlist "
+                                                            + getName()
+                                                            + " is now followed by "
+                                                            + normalUser1.getName()
+                                                            + "."));
         }
     }
 
     public int getNoFollowers() {
         return followingUsers.size();
-    }
-
-    public boolean equals(PlayableEntity playableEntity) {
-        if (playableEntity == null) {
-            return false;
-        }
-
-        if (playableEntity.getType() != AudioType.PLAYLIST) {
-            return false;
-        }
-
-        if (!playableEntity.getName().equals(playableEntity.getName())) {
-            return false;
-        }
-
-        return true;
     }
 }

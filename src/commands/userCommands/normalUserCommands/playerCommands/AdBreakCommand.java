@@ -5,15 +5,15 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class AdBreakCommand extends NormalUserCommand {
+public final class AdBreakCommand extends NormalUserCommand {
     private final double price;
-    public AdBreakCommand(CommandInput commandInput) {
+    public AdBreakCommand(final CommandInput commandInput) {
         super(commandInput);
         price = commandInput.getPrice();
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("adBreak", output);
         if (objectNode == null) {
             return;
@@ -22,7 +22,7 @@ public class AdBreakCommand extends NormalUserCommand {
         if (normalUser.getPlayer(timestamp).getPlayingAudioFile() == null) {
             objectNode.put("message", username + " is not playing any music.");
         } else {
-            normalUser.getPlayer().addBreak(price);
+            normalUser.getPlayer().adBreak(price);
             objectNode.put("message", "Ad inserted successfully.");
         }
 

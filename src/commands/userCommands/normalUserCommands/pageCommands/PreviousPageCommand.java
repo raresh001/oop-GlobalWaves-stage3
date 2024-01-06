@@ -4,19 +4,15 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
-import user.normalUser.page.ArtistPage;
-import user.normalUser.page.LikedContentPage;
 import user.normalUser.page.Page;
 
-import java.util.LinkedList;
-
 public final class PreviousPageCommand extends NormalUserCommand {
-    public PreviousPageCommand(CommandInput commandInput) {
+    public PreviousPageCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("previousPage", output);
         if (objectNode == null) {
             return;

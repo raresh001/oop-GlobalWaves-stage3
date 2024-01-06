@@ -23,7 +23,7 @@ import java.util.Map;
 
 @Getter
 public final class NormalUser extends User implements Observer {
-    private final static double PREMIUM_USER_CREDIT = 1000000;
+    private static final double PREMIUM_USER_CREDIT = 1000000;
 
     private final LinkedList<Playlist> playlists = new LinkedList<>();
     private final LinkedList<Playlist> followedPlaylists = new LinkedList<>();
@@ -90,22 +90,23 @@ public final class NormalUser extends User implements Observer {
     }
 
     @Override
-    public WrappedCommand.wrapResult acceptWrap(final WrappedCommand wrappedCommand, final ObjectNode objectNode) {
+    public WrappedCommand.WrapResult acceptWrap(final WrappedCommand wrappedCommand,
+                                                final ObjectNode objectNode) {
         return wrappedCommand.wrap(this, objectNode);
     }
 
     @Override
-    public void update(Notification notification) {
+    public void update(final Notification notification) {
         notifications.add(notification);
     }
 
+    /**
+     * cancel the premium state and give credit to all watched songs
+     */
     public void cancelPremium() {
         player.cancelPremium();
 
-        // System.out.println("AICI E PREMIUM");
         for (Map.Entry<Song, Integer> entry : player.getWatchedSongsPremium().entrySet()) {
-
-            // System.out.println("DAM " + PREMIUM_USER_CREDIT * entry.getValue() / player.getTotalNoWatchedSongsPremium() + " CATRE " + entry.getKey().getName() + " -- " + entry.getKey().getArtist());
             entry.getKey().addRevenue(PREMIUM_USER_CREDIT
                                             * entry.getValue()
                                             / player.getTotalNoWatchedSongsPremium());
@@ -115,6 +116,10 @@ public final class NormalUser extends User implements Observer {
         player.setTotalNoWatchedSongsPremium(0);
     }
 
+    /**
+     * change the current page and put it in the user's history
+     * @param page1 - the new page
+     */
     public void changePage(final Page page1) {
         pageHistory.changePage(page);
         page = page1;

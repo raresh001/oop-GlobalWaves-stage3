@@ -5,13 +5,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class CancelPremiumCommand extends NormalUserCommand {
-    public CancelPremiumCommand(CommandInput commandInput) {
+public final class CancelPremiumCommand extends NormalUserCommand {
+    public CancelPremiumCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateNormalUserResult("cancelPremium", output);
         if (objectNode == null) {
             return;
@@ -21,8 +21,8 @@ public class CancelPremiumCommand extends NormalUserCommand {
             objectNode.put("message", username + " is not a premium user.");
         } else {
             normalUser.cancelPremium();
-            objectNode.put("message", username +
-                    " cancelled the subscription successfully.");
+            objectNode.put("message", username
+                                                + " cancelled the subscription successfully.");
         }
 
         output.add(objectNode);

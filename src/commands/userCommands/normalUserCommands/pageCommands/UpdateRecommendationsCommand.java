@@ -8,23 +8,31 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
-import org.apache.commons.collections.BinaryHeap;
-import org.checkerframework.checker.units.qual.A;
 import user.artist.Artist;
 import user.normalUser.NormalUser;
 import user.normalUser.player.PlayableEntity;
 import user.normalUser.player.Player;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.PriorityQueue;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Random;
+import java.util.Comparator;
 
 public final class UpdateRecommendationsCommand extends NormalUserCommand {
     private final String recommendationType;
-    public UpdateRecommendationsCommand(CommandInput commandInput) {
+    public UpdateRecommendationsCommand(final CommandInput commandInput) {
         super(commandInput);
         recommendationType = commandInput.getRecommendationType();
     }
 
-    private LinkedList<Song> getGenreSongs(String genre, Iterable<Song> songs) {
+    /* Get all songs from the given collection that have the specified genre */
+    private LinkedList<Song> getGenreSongs(final String genre, final Iterable<Song> songs) {
         LinkedList<Song> genreSongs = new LinkedList<>();
         for (Song song : songs) {
             if (song.getGenre().equalsIgnoreCase(genre)) {
@@ -32,11 +40,11 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
             }
         }
 
-        System.out.println(genreSongs.size());
         return genreSongs;
     }
 
-    private boolean recommendRandomSong(int seed, String genre) {
+    /* Get the random song from the genre array, based on the given seed */
+    private boolean recommendRandomSong(final int seed, final String genre) {
         List<Song> genreSongs = getGenreSongs(genre, Admin.getSongs());
         if (genreSongs.isEmpty()) {
             return false;
@@ -53,6 +61,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return true;
     }
 
+    /* Recommend a random song, if the current song has been played for at least 30s */
     private boolean recommendRandomSong(ObjectNode objectNode, ArrayNode output) {
         Player player = normalUser.getPlayer();
 
@@ -66,6 +75,9 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return true;
     }
 
+    /* Get a set of songs that combines those from the followed and created playlists,
+     *  as well as the liked songs
+     */
     private Set<Song> getAllSongsForRandomPlaylist() {
         Set<Song> allSongs = new LinkedHashSet<>(normalUser.getLikedSongs());
         for (Playlist playlist : normalUser.getPlaylists()) {
@@ -83,6 +95,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return allSongs;
     }
 
+    /* Get the top 3 genres from the analyzed songs */
     private static ArrayList<String> getTopGenres(final Set<Song> allSongs) {
         HashMap<String, Integer> genresHashMap = new HashMap<>();
 
@@ -113,19 +126,14 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return topGenres;
     }
 
+    /* Recommend a random playlist, if there are any songs in the followed playlists, created
+     * playlists or the liked array
+     */
     private boolean recommendRandomPlaylist(final ObjectNode objectNode, final ArrayNode output) {
         int[] topCount = {5, 3, 2};
 
         Playlist playlist = new Playlist(username + "'s recommendations", username);
-        if (normalUser.getLastRecommendation() != null
-                && playlist.getName().equals(normalUser.getLastRecommendation().getName())) {
-            objectNode.put("message", "No new recommendations were found");
-            output.add(objectNode);
-            return false;
-        }
-
         Set<Song> resultSongs = new LinkedHashSet<>();
-
         Set<Song> allSongs = getAllSongsForRandomPlaylist();
 
         if (allSongs.isEmpty()) {
@@ -153,6 +161,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return true;
     }
 
+    /* Get top 5 listeners of the given song */
     private static ArrayList<String> getTopListenersSong(Song song) {
         final int topFansLimit = 5;
         final ArrayList<String> topFans = new ArrayList<>(topFansLimit);
@@ -177,6 +186,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return topFans;
     }
 
+    /* Get top 5 listeners of the artist with the given name */
     private static ArrayList<String> getTopListenersArtist(final String name) {
         Artist artist = Admin.getArtistByName(name);
 
@@ -214,6 +224,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         return bestFans;
     }
 
+    /* Concatenate the 2 arrays in the first one (considering that there are no duplicated) */
     private void getTotalFans(ArrayList<String> songFans, ArrayList<String> artistFans) {
         final int totalArtistFans = 5;
         int noElemsAdded = 0;
@@ -227,6 +238,7 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
         }
     }
 
+    /* Recommend fans playlist, if the user has liked any song */
     private boolean recommendFansPlaylist(ObjectNode objectNode, ArrayNode output) {
         if (normalUser.getLikedSongs().isEmpty()) {
             objectNode.put("message", "No new recommendations were found");
@@ -236,13 +248,8 @@ public final class UpdateRecommendationsCommand extends NormalUserCommand {
 
         Song playedSong = (Song) normalUser.getPlayer().getPlayingAudioFile();
 
-        Playlist playlist = new Playlist(playedSong.getArtist() + " Fan Club recommendations", username);
-        if (playlist.equals(normalUser.getLastRecommendation())) {
-            objectNode.put("message", "No new recommendations were found");
-            output.add(objectNode);
-            return false;
-        }
-
+        Playlist playlist = new Playlist(playedSong.getArtist() + " Fan Club recommendations",
+                                            username);
         ArrayList<String> fans = getTopListenersSong(playedSong);
         getTotalFans(fans, getTopListenersArtist(playedSong.getArtist()));
 

@@ -34,6 +34,12 @@ public abstract class User {
      */
     public abstract boolean canBeDeleted();
 
-    public abstract WrappedCommand.wrapResult acceptWrap(WrappedCommand wrappedCommand,
+    /**
+     * Accept the wrapping of this command (visit)
+     * @param wrappedCommand - the wrapping command that analyzes this user
+     * @param objectNode - the object node containing the statistics of this action
+     * @return - the success rate of this operation (if there was any information to be put)
+     */
+    public abstract WrappedCommand.WrapResult acceptWrap(WrappedCommand wrappedCommand,
                                                          ObjectNode objectNode);
 }

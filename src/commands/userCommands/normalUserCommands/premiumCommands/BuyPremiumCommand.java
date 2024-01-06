@@ -5,13 +5,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class BuyPremiumCommand extends NormalUserCommand {
-    public BuyPremiumCommand(CommandInput commandInput) {
+public final class BuyPremiumCommand extends NormalUserCommand {
+    public BuyPremiumCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateNormalUserResult("buyPremium", output);
         if (objectNode == null) {
             return;
@@ -21,8 +21,8 @@ public class BuyPremiumCommand extends NormalUserCommand {
             objectNode.put("message", username + " is already a premium user.");
         } else {
             normalUser.getPlayer().setPremium(true);
-            objectNode.put("message", username +
-                                                    " bought the subscription successfully.");
+            objectNode.put("message", username
+                                                + " bought the subscription successfully.");
         }
 
         output.add(objectNode);

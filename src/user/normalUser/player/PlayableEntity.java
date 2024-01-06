@@ -38,10 +38,23 @@ public abstract class PlayableEntity implements SearchableEntity {
      */
     public abstract int getRemainingTime(Player player);
 
+    /**
+     * @param track - the track running on the player
+     * @return - the duration of the current played track
+     */
     public abstract int getCurrentTrackDuration(int track);
 
+    /**
+     * Accept get next track operation (visit)
+     * @param player - the player that needs to be updated
+     * @return - if the player was NOT reset
+     */
     public abstract boolean acceptGetNextTrack(Player player);
 
+    /**
+     * Accept listening to the current track
+     * @param player - the player that is playing this file
+     */
     public abstract void acceptListen(Player player);
 
     /**
@@ -69,6 +82,11 @@ public abstract class PlayableEntity implements SearchableEntity {
          return noWatchers == 0;
     }
 
+    /**
+     * Accept the selection of this file (visit)
+     * @param selectCommand - the command that selects this entity
+     * @param objectNode - the json containing the result of this command
+     */
     @Override
     public final void acceptSelect(final SelectCommand selectCommand, final ObjectNode objectNode) {
          selectCommand.select(this, objectNode);
@@ -90,6 +108,9 @@ public abstract class PlayableEntity implements SearchableEntity {
         noWatchers--;
     }
 
+    /**
+     * @return - if this file is an ad
+     */
     public boolean isAd() {
         return false;
     }

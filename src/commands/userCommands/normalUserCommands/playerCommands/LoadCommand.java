@@ -1,8 +1,5 @@
 package commands.userCommands.normalUserCommands.playerCommands;
 
-import audio.audioCollections.Album;
-import audio.audioCollections.SongsCollection;
-import audio.audioFiles.Song;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;

@@ -14,7 +14,11 @@ import user.normalUser.Notification;
 import user.normalUser.Subject;
 import user.normalUser.search.bar.SearchableEntity;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.LinkedList;
+import java.util.HashMap;
+import java.util.Map;
 
 @Getter
 public final class Artist extends User implements SearchableEntity {
@@ -31,6 +35,9 @@ public final class Artist extends User implements SearchableEntity {
         super(name1, age1, city1);
     }
 
+    /**
+     * @return - total revenues from all songs of the artist (including removed ones)
+     */
     public double getTotalSongRevenue() {
         double totalRevenue = 0;
         for (Album album : removedAlbums) {
@@ -84,7 +91,7 @@ public final class Artist extends User implements SearchableEntity {
      * @param name - the name of the merch
      * @return - indicates if the operation was successful (if the artist owns that merch)
      */
-    public boolean buyMerch(String name) {
+    public boolean buyMerch(final String name) {
         for (Merch merch : merchList) {
             if (merch.getName().equals(name)) {
                 merchRevenue += merch.getPrice();
@@ -96,14 +103,22 @@ public final class Artist extends User implements SearchableEntity {
     }
 
     @Override
-    public WrappedCommand.wrapResult acceptWrap(final WrappedCommand wrappedCommand, final ObjectNode objectNode) {
+    public WrappedCommand.WrapResult acceptWrap(final WrappedCommand wrappedCommand,
+                                                final ObjectNode objectNode) {
         return wrappedCommand.wrap(this, objectNode);
     }
 
-    public void notifySubscribers(Notification notification) {
+    /**
+     * notify all observers
+     * @param notification - the notification that needs to be sent to all observers
+     */
+    public void notifySubscribers(final Notification notification) {
         subject.notify(notification);
     }
 
+    /**
+     * @return - if the artist has any merchandise bought or any listened song
+     */
     public boolean hasNotPlaysOrMerch() {
         if (merchRevenue != 0.0) {
             return false;
@@ -120,20 +135,23 @@ public final class Artist extends User implements SearchableEntity {
         return true;
     }
 
+    /* Get a hash map of all song prices (it adds the duplicate names) */
     private HashMap<String, Double> getSongPrices() {
         HashMap<String, Double> songPrices = new HashMap<>();
 
         for (Album album : removedAlbums) {
             for (Song song : album.getSongs()) {
                 songPrices.put(song.getName(),
-                        songPrices.getOrDefault(song.getName(), 0.0) + song.getRevenues());
+                                            songPrices.getOrDefault(song.getName(), 0.0)
+                                                + song.getRevenues());
             }
         }
 
         for (Album album : albums) {
             for (Song song : album.getSongs()) {
                 songPrices.put(song.getName(),
-                        songPrices.getOrDefault(song.getName(), 0.0) + song.getRevenues());
+                                            songPrices.getOrDefault(song.getName(), 0.0)
+                                                    + song.getRevenues());
             }
         }
 
@@ -159,8 +177,14 @@ public final class Artist extends User implements SearchableEntity {
         return best;
     }
 
-    public ObjectNode showStatistics(int indexInArray) {
-        double songRevenue = (double) Math.round(getTotalSongRevenue() * 100) / 100;
+    /**
+     * Show the statistics of the artist, in the way that the program ending requires
+     * @param indexInArray - the index of the artist in Admin.getArtists()
+     * @return - the object node containing the required information
+     */
+    public ObjectNode showStatistics(final int indexInArray) {
+        final int oneHundred = 100;
+        double songRevenue = (double) Math.round(getTotalSongRevenue() * oneHundred) / oneHundred;
 
         ObjectNode statisticsNode = (new ObjectMapper()).createObjectNode();
         statisticsNode.put("merchRevenue", merchRevenue);

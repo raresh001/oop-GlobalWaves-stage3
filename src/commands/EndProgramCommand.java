@@ -14,7 +14,12 @@ public final class EndProgramCommand {
     private EndProgramCommand() {
     }
 
-    public static void executeCommand(int timestamp, ArrayNode output) {
+    /**
+     * Return statistics about the artists at the end of the execution
+     * @param timestamp - the final timestamp
+     * @param output - contains the result of the command
+     */
+    public static void executeCommand(final int timestamp, final ArrayNode output) {
         ObjectNode objectNode = (new ObjectMapper()).createObjectNode();
         objectNode.put("command", "endProgram");
 
@@ -29,12 +34,14 @@ public final class EndProgramCommand {
 
         ArrayList<Artist> artist = new ArrayList<>(Admin.getArtists());
 
-        artist.sort((o1, o2) -> o1.getTotalRevenue() == o2.getTotalRevenue() ?
-                o1.getName().compareTo(o2.getName()) : (int) (o2.getTotalRevenue() - o1.getTotalRevenue()));
+        artist.sort((o1, o2) -> o1.getTotalRevenue() == o2.getTotalRevenue()
+                                    ? o1.getName().compareTo(o2.getName())
+                                        : (int) (o2.getTotalRevenue() - o1.getTotalRevenue()));
 
         ObjectNode statsObject = (new ObjectMapper()).createObjectNode();
         for (int artistIndex = 0; artistIndex < artist.size(); artistIndex++) {
-            statsObject.set(artist.get(artistIndex).getName(), artist.get(artistIndex).showStatistics(artistIndex));
+            statsObject.set(artist.get(artistIndex).getName(),
+                            artist.get(artistIndex).showStatistics(artistIndex));
         }
 
         objectNode.set("result", statsObject);

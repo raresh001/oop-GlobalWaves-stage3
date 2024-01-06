@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.Command;
 import fileio.input.CommandInput;
-import org.checkerframework.checker.units.qual.A;
 import user.artist.Artist;
 import user.host.Host;
 import user.normalUser.NormalUser;
@@ -17,6 +16,7 @@ public final class AddUserCommand extends Command {
     private final String username;
     private final int age;
     private final String city;
+
     public AddUserCommand(final CommandInput commandInput) {
         super(commandInput);
         type = commandInput.getType();

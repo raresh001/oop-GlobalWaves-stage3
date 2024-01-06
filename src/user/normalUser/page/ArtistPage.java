@@ -1,7 +1,6 @@
 package user.normalUser.page;
 
 import user.artist.Artist;
-import user.artist.Merch;
 import user.normalUser.NormalUser;
 
 public final class ArtistPage implements Page {
@@ -69,8 +68,8 @@ public final class ArtistPage implements Page {
 
     @Override
     public AddMerchResult acceptBuyMerch(final String name) {
-        return artist.buyMerch(name) ? AddMerchResult.SUCCESSFUL_PURCHASE :
-                                            AddMerchResult.NONEXISTENT_MERCH;
+        return artist.buyMerch(name) ? AddMerchResult.SUCCESSFUL_PURCHASE
+                                        : AddMerchResult.NONEXISTENT_MERCH;
     }
 
     @Override

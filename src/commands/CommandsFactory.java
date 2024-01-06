@@ -1,13 +1,22 @@
 package commands;
 
-import commands.adminCommands.*;
+import commands.adminCommands.AddUserCommand;
+import commands.adminCommands.DeleteUserCommand;
+import commands.adminCommands.GetAllUsersCommand;
+import commands.adminCommands.GetOnlineUsersCommand;
+import commands.adminCommands.ShowPodcastsCommand;
+import commands.adminCommands.ShowAlbumsCommand;
 import commands.statisticsCommands.GetTop5AlbumsCommand;
 import commands.statisticsCommands.GetTop5ArtistsCommand;
 import commands.statisticsCommands.GetTop5PlaylistsCommand;
 import commands.statisticsCommands.GetTop5SongsCommand;
 import commands.userCommands.GetNotificationsCommand;
 import commands.userCommands.WrappedCommand;
-import commands.userCommands.artistCommands.*;
+import commands.userCommands.artistCommands.AddAlbumCommand;
+import commands.userCommands.artistCommands.AddEventCommand;
+import commands.userCommands.artistCommands.RemoveAlbumCommand;
+import commands.userCommands.artistCommands.RemoveEventCommand;
+import commands.userCommands.artistCommands.AddMerchCommand;
 import commands.userCommands.hostCommands.AddAnnouncementCommand;
 import commands.userCommands.hostCommands.AddPodcastCommand;
 import commands.userCommands.hostCommands.RemoveAnnouncementCommand;

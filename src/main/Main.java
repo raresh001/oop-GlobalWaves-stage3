@@ -1,6 +1,5 @@
 package main;
 
-import audio.audioFiles.Song;
 import checker.Checker;
 import checker.CheckerConstants;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,7 +11,6 @@ import fileio.input.CommandInput;
 import fileio.input.LibraryInput;
 import admin.Admin;
 
-import javax.swing.text.Style;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -85,14 +83,9 @@ public final class Main {
         // Initialise library global data
         Admin.initialiseInstance(library);
 
-        // read commands from filePath1
-        CommandInput[] commandInputs =
-                objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + filePath1),
-                        CommandInput[].class);
-
         int currentTimestamp = 0;
 
-        for (CommandInput commandInput : commandInputs) {
+        for (CommandInput commandInput : commands) {
             currentTimestamp = commandInput.getTimestamp();
             CommandsFactory.createCommand(commandInput).executeCommand(outputs);
         }

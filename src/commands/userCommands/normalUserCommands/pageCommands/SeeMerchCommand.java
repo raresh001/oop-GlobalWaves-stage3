@@ -6,13 +6,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.userCommands.normalUserCommands.NormalUserCommand;
 import fileio.input.CommandInput;
 
-public class SeeMerchCommand extends NormalUserCommand {
-    public SeeMerchCommand(CommandInput commandInput) {
+public final class SeeMerchCommand extends NormalUserCommand {
+    public SeeMerchCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("seeMerch", output);
         if (objectNode == null) {
             return;

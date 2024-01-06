@@ -32,6 +32,11 @@ public interface Page {
         return AddMerchResult.INVALID_PAGE;
     }
 
+    /**
+     * accept the subscription for the owner of this page (visit)
+     * @param normalUser - the user that subscribed
+     * @return - a string containing the response of this action
+     */
     default String acceptSubscribe(final NormalUser normalUser) {
         return "To subscribe you need to be on the page of an artist or host.";
     }

@@ -1,9 +1,10 @@
-package user.normalUser.search.bar;
+package user.normalUser.search.bar.filters;
 
 import admin.Admin;
 import audio.audioCollections.Podcast;
 import fileio.input.FiltersInput;
 import user.normalUser.NormalUser;
+import user.normalUser.search.bar.SearchableEntity;
 
 import java.util.ArrayList;
 

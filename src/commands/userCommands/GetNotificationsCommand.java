@@ -9,13 +9,13 @@ import user.normalUser.Notification;
 
 import java.util.ArrayList;
 
-public class GetNotificationsCommand extends NormalUserCommand {
-    public GetNotificationsCommand(CommandInput commandInput) {
+public final class GetNotificationsCommand extends NormalUserCommand {
+    public GetNotificationsCommand(final CommandInput commandInput) {
         super(commandInput);
     }
 
     @Override
-    public void executeCommand(ArrayNode output) {
+    public void executeCommand(final ArrayNode output) {
         ObjectNode objectNode = createTemplateResultRequireOnline("getNotifications",
                                                                     output);
         if (objectNode == null) {

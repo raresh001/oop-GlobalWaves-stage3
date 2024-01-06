@@ -1,6 +1,7 @@
-package user.normalUser.search.bar;
+package user.normalUser.search.bar.filters;
 
 import user.normalUser.NormalUser;
+import user.normalUser.search.bar.SearchableEntity;
 
 import java.util.ArrayList;
 

@@ -29,17 +29,17 @@ public abstract class SongsCollection extends PlayableEntity {
     }
 
     @Override
-    public int getCurrentTrackDuration(int track) {
+    public final int getCurrentTrackDuration(final int track) {
         return songs.get(track).getDuration();
     }
 
     @Override
-    public boolean acceptGetNextTrack(Player player) {
+    public final boolean acceptGetNextTrack(final Player player) {
         return player.getNextTrackSongsCollection();
     }
 
     @Override
-    public void acceptListen(Player player) {
+    public final void acceptListen(final Player player) {
         songs.get(player.getPosition().getTrack()).acceptListen(player);
     }
 
